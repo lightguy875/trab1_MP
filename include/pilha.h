@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef struct ItemType
+{
+	int x;
+}Dado;
+typedef struct ElementoLista
+{
+	Dado pedaco;
+	struct ElementoLista *next;
+} Elemento;
+
+typedef struct pilha
+{
+	Elemento * inicio;
+	int size;
+	int max;
+} Pilha;
+
+Pilha *create_stack(Pilha *,int max_tam);
+int push(Pilha *p, int elem);
+int pop(Pilha * p);
+int empty(Pilha *p);
+void print(Pilha *p);
+void free_stack(Pilha *p);
+int tamanho(Pilha *p);
+//bool isFULL(Pilha *p);
+//bool destroy_stack(Pilha *p);
+
+
+
