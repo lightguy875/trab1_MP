@@ -25,8 +25,7 @@ int empty(Pilha *p);
 void print(Pilha *p);
 void free_stack(Pilha *p);
 int tamanho(Pilha *p);
-//bool isFULL(Pilha *p);
-//bool destroy_stack(Pilha *p);
+int isFULL(Pilha *p);
 
 
 

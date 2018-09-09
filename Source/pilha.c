@@ -59,9 +59,6 @@ void print(Pilha *p)
 	corrente = corrente->next; 
 	} 
 }
-
-
-
 void free_stack(Pilha *p)
 {
 	Elemento *temp = p->inicio;
@@ -75,4 +72,11 @@ void free_stack(Pilha *p)
 	}
 	free(temp); /*desalocando a pilha*/
 }
-
+int tamanho(Pilha *p)
+{
+	return p->size;
+}
+int isFULL(Pilha *p)
+{
+	return (p->size == p->max);
+}

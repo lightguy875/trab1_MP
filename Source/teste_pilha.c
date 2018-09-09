@@ -33,7 +33,16 @@ TEST (empty_pilha_test,checar_pilha_vazia)
 	EXPECT_EQ(true,empty(p));	
 }
 
-TEST ()
+TEST (isFULL_test,checar_pilha_esta_cheia)
+{
+	int k;
+	Pilha *p;
+	p = create_stack(p, 30);
+	k = push(p,30);
+	EXPECT_EQ(0,isFULL(p));
+}
+
+
 
 
 int main(int argc, char **argv)
