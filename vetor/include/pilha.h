@@ -3,29 +3,23 @@
 
 typedef struct ItemType
 {
-	int x;
+	int  x;
 }Dado;
-typedef struct ElementoLista
-{
-	Dado pedaco;
-	struct ElementoLista *next;
-} Elemento;
 
 typedef struct pilha
 {
-	Elemento * inicio;
+	Dado  * valor;
+	int max_tam;
 	int size;
-	int max;
-} Pilha;
+}Pilha;
 
-Pilha *create_stack(Pilha *,int max_tam);
+
+Pilha * create_stack(Pilha *p, int max_tam);
+int top(Pilha *p);
 int push(Pilha *p, int elem);
-int pop(Pilha * p);
+int pop(Pilha *p);
 int empty(Pilha *p);
 void print(Pilha *p);
 void free_stack(Pilha *p);
 int tamanho(Pilha *p);
 int isFULL(Pilha *p);
-
-
-
