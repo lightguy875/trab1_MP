@@ -51,12 +51,8 @@ void print(Pilha *p)
 }
 void free_stack(Pilha * p)
 {
-
-	for(int i=0;i<=p->size; i++)
-	{
-
-		p->valor[i].x = 0;
-	}
+	free(p->valor);
+	free(p);
 }
 int tamanho(Pilha *p)
 {
@@ -65,4 +61,12 @@ int tamanho(Pilha *p)
 int isFULL(Pilha *p)
 {
 	return (p->size == p->max_tam);
+}
+int exists(Pilha *p)
+{
+	return (p != NULL);
+}
+int top(Pilha *p)
+{
+	return (p->valor[p->size-1].x);
 }

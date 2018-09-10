@@ -23,3 +23,5 @@ void print(Pilha *p);
 void free_stack(Pilha *p);
 int tamanho(Pilha *p);
 int isFULL(Pilha *p);
+int exists(Pilha *p);
+int top(Pilha *p);

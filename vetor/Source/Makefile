@@ -22,6 +22,7 @@ _TESTS = teste_pilha.c
 TESTS = $(patsubst %,$(DIR_TESTS)/%,$(_TESTS))
 
 
+
 $(ODIR)/%.o: %.c $(HEADERS) 
 	$(CC) -c -o $@ $< $(CFLAGS) $(LIBS)
 
