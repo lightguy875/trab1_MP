@@ -31,7 +31,8 @@ $(PROGRAM): $(OBJECTS)
 $(TEST_EXE) : $(TESTS)
 	$(CC) -o $@ --coverage $^ $(CFLAGS)
 
-all: $(PROGRAM) test gcov project
+all:
+	./$(PROGRAM) test gcov project
 
 run: 
 	./$(PROGRAM) 
