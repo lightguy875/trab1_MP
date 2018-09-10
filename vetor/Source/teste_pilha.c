@@ -4,16 +4,16 @@
 
 using namespace std;
 
-TEST( create_stack_test, Criar_pilha)
+TEST(create_stack_test, Criar_pilha)
 {
-	Pilha * p;
+	Pilha *p;
 	EXPECT_EQ(p, create_stack(p,30));
 	
-}
+} 
 
- TEST( push_pilha_test, Adicionar_elemento_na_pilha)
+  TEST( push_pilha_test, Adicionar_elemento_na_pilha)
 {
-	Pilha * p;
+	Pilha  *p;
 	p = create_stack(p,30);
 	EXPECT_EQ( 30 , push(p,30) );
 }
@@ -43,6 +43,7 @@ TEST (isFULL_test,checar_pilha_esta_cheia)
 }
 
 
+ 
 
 
 int main(int argc, char **argv)

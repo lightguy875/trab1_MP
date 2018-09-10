@@ -34,7 +34,7 @@ $(TEST_EXE) : $(TESTS)
 all: $(PROGRAM) test gcov project
 
 run: 
-	./$(PROGRAM) PILHA_T
+	./$(PROGRAM) 
 
 
 .PHONY: clean

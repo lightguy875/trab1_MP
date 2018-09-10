@@ -2,75 +2,61 @@
 #include <stdlib.h>
 #include "../include/pilha.h"
 
-Pilha *create_stack(Pilha * p,int max_tam)
+Pilha * create_stack(Pilha *p,int max_tam)
 {
-	p = (Pilha *)malloc(sizeof(Pilha));
-	p->inicio = NULL;
-	p->max = max_tam;
+	p = (Pilha *) malloc(sizeof(Pilha));
+	p->valor = (Dado*) malloc(max_tam * sizeof(Dado));
+	p->max_tam = max_tam;
+	p->size = 0;
 	return p;
 }
 
-int push(Pilha *p, int elem)
+int push(Pilha * p, int elem)
 {
-	if(p->size < p->max )
+	if(p->size < p->max_tam )
 	{
-		Elemento *novo_elemento;
-		if ((novo_elemento = (Elemento *)malloc(sizeof(Elemento))) == NULL)
-			return -1;
-		novo_elemento->pedaco.x = elem;
-		novo_elemento->next = p->inicio;
-		p->inicio = novo_elemento;
+		p->valor[p->size].x = elem;
 		p->size++;
-		return(p->inicio->pedaco.x);
+		return(p->valor[p->size-1].x);
 	}
 	else 
 	{
 		printf("A pilha esta no seu tamanho máximo \n");
-		return(p->inicio->pedaco.x);
+		return(p->valor[p->size].x);
 	}
 	
 }
 
 int pop(Pilha * p)
 {
-	Elemento *remov_elemento;
+	
 	if (p->size == 0)
-		return -1;
-	remov_elemento = p->inicio;
-	p->inicio = p->inicio->next;
-	free(remov_elemento);
+		return -1;	
 	p->size--;
 	return 0;
 }
 
 int empty(Pilha *p)
 {
-	return (p->inicio == NULL);
+	return (p->size == 0);
 }
 
 void print(Pilha *p)
 {
-	Elemento *corrente;
-	int i;
-	corrente = p->inicio;
-	for(i=0;i<p->size;++i)
+
+	for(int i=0;i<p->size;++i)
 	{ 
-	printf("\t\t%d\n", corrente->pedaco.x); 
-	corrente = corrente->next; 
+	printf("\t\t%d\n", p->valor[i].x); 
 	} 
 }
-void free_stack(Pilha *p)
+void free_stack(Pilha * p)
 {
-	Elemento *temp = p->inicio;
-	Elemento *temp2;
-	while (p != NULL)
+
+	for(int i=0;i<=p->size; i++)
 	{
 
-		temp2 = temp->next;
-		free(temp); /*desalocando os nos*/
-		temp = temp2;
+		p->valor[i].x = 0;
 	}
-	free(temp); /*desalocando a pilha*/
 }
 int tamanho(Pilha *p)
 {
@@ -78,5 +64,5 @@ int tamanho(Pilha *p)
 }
 int isFULL(Pilha *p)
 {
-	return (p->size == p->max);
+	return (p->size == p->max_tam);
 }
