@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include "../include/pilha.h"
 
-Pilha * create_stack(Pilha *p, int max_tam)
+Pilha *create_stack(Pilha *p, int max_tam)
 {
 	if (!exists(p))
 	{
-        p = (Pilha *) malloc(sizeof(Pilha));
-		p->valor = (Dado *) malloc(max_tam * sizeof(Dado));
+		p = (Pilha *)malloc(sizeof(Pilha));
+		p->valor = (Dado *)malloc(max_tam * sizeof(Dado));
 		p->max_tam = max_tam;
 		p->size = 0;
 		return p;
@@ -16,9 +16,6 @@ Pilha * create_stack(Pilha *p, int max_tam)
 	else
 	{
 		return p;
-		
-		
-		
 	}
 }
 
@@ -34,19 +31,19 @@ int push(Pilha *p, Dado elem)
 		}
 		else
 		{
-			
+
 			return -1;
 		}
 	}
 
 	else
 	{
-		
+
 		return -1;
 	}
 }
 
-int pop(Pilha *p,Dado * elemento)
+int pop(Pilha *p, Dado *elemento)
 {
 
 	if (exists(p))
@@ -61,10 +58,9 @@ int pop(Pilha *p,Dado * elemento)
 
 	else
 	{
-		
+
 		return -1;
 	}
-	
 }
 
 int empty(Pilha *p)
@@ -77,13 +73,11 @@ int empty(Pilha *p)
 
 	else
 	{
-		printf("A pilha não existe \n");
 		return -1;
 	}
+}
 
-} 
-
-void print(Pilha *p)
+int print_pilha(Pilha *p)
 {
 	if (exists(p))
 	{
@@ -92,14 +86,16 @@ void print(Pilha *p)
 		{
 			printf("\t\t%d\n", p->valor[i]);
 		}
+		return 0;
 	}
 
 	else
 	{
-		
+		return -1;
+
 	}
 }
-Pilha * free_stack(Pilha *p)
+Pilha *free_stack(Pilha *p)
 {
 	if (exists(p))
 	{
@@ -112,7 +108,7 @@ Pilha * free_stack(Pilha *p)
 
 	else
 	{
-		
+
 		return p;
 	}
 }
@@ -125,7 +121,7 @@ int tamanho(Pilha *p)
 
 	else
 	{
-		
+
 		return -1;
 	}
 }
@@ -139,7 +135,7 @@ int isFULL(Pilha *p)
 
 	else
 	{
-		
+
 		return -1;
 	}
 }
@@ -149,27 +145,40 @@ int exists(Pilha *p)
 	{
 		return 0;
 	}
-	
+
 	else
 	{
 		return 1;
 	}
-	
 }
 int top(Pilha *p, Dado *elemento)
 {
 	if (exists(p))
-{
+	{
 
-	if (p->size == 0)
+		if (p->size == 0)
+			return -1;
+		*elemento = p->valor[p->size - 1];
+		return 0;
+	}
+
+	else
+	{
+
 		return -1;
-	*elemento = p->valor[p->size-1];
-	return 0;
+	}
 }
-
-else
+Pilha *set_size(Pilha *p, int tam)
 {
-	
-	return -1;
-}
+	if (exists(p) && tam > p->size)
+	{
+
+		p->max_tam = tam;
+		return p;
+	}
+
+	else
+	{
+		return p;
+	}
 }
