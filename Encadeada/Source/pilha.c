@@ -7,11 +7,14 @@ Pilha *create_stack(Pilha * p,int max_tam)
 	p = (Pilha *)malloc(sizeof(Pilha));
 	p->inicio = NULL;
 	p->max = max_tam;
+	p->size = 0;
 	return p;
 }
 
 int push(Pilha *p, int elem)
 {
+	if(exists(p))
+	{
 	if(p->size < p->max )
 	{
 		Elemento *novo_elemento;
@@ -21,18 +24,26 @@ int push(Pilha *p, int elem)
 		novo_elemento->next = p->inicio;
 		p->inicio = novo_elemento;
 		p->size++;
-		return(p->inicio->pedaco.x);
+		return 0;
 	}
 	else 
 	{
-		printf("A pilha esta no seu tamanho máximo \n");
-		return(p->inicio->pedaco.x);
+		return -1;
 	}
+	}
+	
+	else
+	{
+		return -1;
+	}
+	
 	
 }
 
 int pop(Pilha * p)
 {
+	if(exists(p))
+	{
 	Elemento *remov_elemento;
 	if (p->size == 0)
 		return -1;
@@ -41,11 +52,27 @@ int pop(Pilha * p)
 	free(remov_elemento);
 	p->size--;
 	return 0;
+	}
+	
+	else
+	{
+		return -1;
+	}
+	
 }
 
 int empty(Pilha *p)
 {
+	if(exists(p))
+	{
 	return (p->inicio == NULL);
+	}
+	
+	else
+	{
+		return -1;
+	}
+	
 }
 
 void print(Pilha *p)
@@ -59,24 +86,82 @@ void print(Pilha *p)
 	corrente = corrente->next; 
 	} 
 }
-void free_stack(Pilha *p)
+Pilha * free_stack(Pilha *p)
 {
+	if(exists(p))
+	{
 	Elemento *temp = p->inicio;
 	Elemento *temp2;
-	while (p != NULL)
+	while (temp != NULL)
 	{
 
 		temp2 = temp->next;
 		free(temp); /*desalocando os nos*/
+		temp = NULL;
 		temp = temp2;
 	}
-	free(temp); /*desalocando a pilha*/
+	free(p); /*desalocando a pilha*/
+	p = NULL;
+	return p;
+	
+	}
+	
+	else
+	{
+		return p;
+	}
+	
 }
 int tamanho(Pilha *p)
 {
+	if(exists(p))
+	{
 	return p->size;
+	}
+	
+	else
+	{
+		return -1;
+	}
+	
 }
 int isFULL(Pilha *p)
 {
+	if(exists(p))
+	{
+
 	return (p->size == p->max);
+	}
+	
+	else
+	{
+		return -1;
+	}
+	
+}
+int exists(Pilha *p)
+{
+	if(p == NULL)
+	{
+		return 0;
+	}
+	
+	else
+	{
+		return 1;
+	}
+
+}
+
+Pilha * set_size(Pilha *p, int tam)
+{
+	if(exists(p))
+	{
+	p->max = tam;
+	return p;
+	}
+	else 
+	{
+		return p;
+	}
 }
