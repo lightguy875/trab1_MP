@@ -2,7 +2,7 @@ ID$@IR =../include
 IDIR = ../include
 CC= g++ -std=c++11
 CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs -lgtest -lgtest_main  -fpermissive
-
+TEST_DIR=obj
 ODIR=../Source/obj
 LDIR =../Source
 DIR_TESTS=
@@ -34,10 +34,20 @@ $(TEST_EXE) : $(TESTS)
 all: $(PROGRAM) test gcov project
 
 run: 
-	./$(PROGRAM) PILHA_T
+	./$(PROGRAM) 
 
 
 .PHONY: clean
 
+gcov:
+	gcov $(TEST_DIR)/$(PROGRAM).gcda
+
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+
+clean_coverage:
+	rm -f $(ODIR)/*.gcno $(ODIR)/*.gcda
+
+clean_all:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ && rm -f $(ODIR)/*.gcno $(ODIR)/*.gcda
+

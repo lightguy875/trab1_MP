@@ -1,0 +1,188 @@
+        -:    0:Source:pilha.c
+        -:    0:Graph:obj/pilha.gcno
+        -:    0:Data:obj/pilha.gcda
+        -:    0:Runs:8
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include "../include/pilha.h"
+        -:    4:
+       88:    5:Pilha *create_stack(Pilha *p, int max_tam)
+        -:    6:{
+       88:    7:	p = (Pilha *)malloc(sizeof(Pilha));
+       88:    8:	p->inicio = NULL;
+       88:    9:	p->max = max_tam;
+       88:   10:	p->size = 0;
+       88:   11:	return p;
+        -:   12:}
+        -:   13:
+       80:   14:int push(Pilha *p, Dado elem)
+        -:   15:{
+       80:   16:	if (exists(p))
+        -:   17:	{
+       64:   18:		if (p->size < p->max)
+        -:   19:		{
+        -:   20:			Elemento *novo_elemento;
+       56:   21:			if ((novo_elemento = (Elemento *)malloc(sizeof(Elemento))) == NULL)
+    #####:   22:				return -1;
+       56:   23:			novo_elemento->pedaco = elem;
+       56:   24:			novo_elemento->next = p->inicio;
+       56:   25:			p->inicio = novo_elemento;
+       56:   26:			p->size++;
+       56:   27:			return 0;
+        -:   28:		}
+        -:   29:		else
+        -:   30:		{
+        8:   31:			return -1;
+        -:   32:		}
+        -:   33:	}
+        -:   34:
+        -:   35:	else
+        -:   36:	{
+       16:   37:		return -1;
+        -:   38:	}
+        -:   39:}
+       32:   40:int top(Pilha *p, Dado *elem)
+        -:   41:{
+       32:   42:	if (exists(p))
+        -:   43:	{
+        -:   44:		Elemento *a;
+        8:   45:		a = p->inicio;
+        8:   46:		*elem = a->pedaco;
+        8:   47:		return 0;
+        -:   48:	}
+        -:   49:
+        -:   50:	else
+        -:   51:	{
+       24:   52:		return -1;
+        -:   53:	}
+        -:   54:}
+        -:   55:
+       24:   56:int pop(Pilha *p)
+        -:   57:{
+       24:   58:	if (exists(p))
+        -:   59:	{
+        -:   60:		Elemento *remov_elemento;
+       16:   61:		if (p->size == 0)
+        8:   62:			return -1;
+        8:   63:		remov_elemento = p->inicio;
+        8:   64:		p->inicio = p->inicio->next;
+        8:   65:		free(remov_elemento);
+        8:   66:		p->size--;
+        8:   67:		return 0;
+        -:   68:	}
+        -:   69:
+        -:   70:	else
+        -:   71:	{
+        8:   72:		return -1;
+        -:   73:	}
+        -:   74:}
+        -:   75:
+       24:   76:int empty(Pilha *p)
+        -:   77:{
+       24:   78:	if (exists(p))
+        -:   79:	{
+       16:   80:		return (p->inicio == NULL);
+        -:   81:	}
+        -:   82:
+        -:   83:	else
+        -:   84:	{
+        8:   85:		return -1;
+        -:   86:	}
+        -:   87:}
+        -:   88:
+       16:   89:int print_pilha(Pilha *p)
+        -:   90:{
+       16:   91:	if (exists(p))
+        -:   92:	{
+        -:   93:
+        -:   94:		Elemento *corrente;
+        -:   95:		int i;
+        8:   96:		corrente = p->inicio;
+       16:   97:		for (i = 0; i < p->size; ++i)
+        -:   98:		{
+        8:   99:			printf("\t\t%i\n", corrente->pedaco);
+        8:  100:			corrente = corrente->next;
+        -:  101:		}
+        8:  102:		return 0;
+        -:  103:	}
+        -:  104:
+        -:  105:	else
+        -:  106:	{
+        8:  107:		return -1;
+        -:  108:	}
+        -:  109:}
+       32:  110:Pilha *free_stack(Pilha *p)
+        -:  111:{
+       32:  112:	if (exists(p))
+        -:  113:	{
+       16:  114:		Elemento *temp = p->inicio;
+        -:  115:		Elemento *temp2;
+      16*:  116:		while (temp != NULL)
+        -:  117:		{
+        -:  118:
+    #####:  119:			temp2 = temp->next;
+    #####:  120:			free(temp); /*desalocando os nos*/
+    #####:  121:			temp = NULL;
+    #####:  122:			temp = temp2;
+        -:  123:		}
+       16:  124:		free(p); /*desalocando a pilha*/
+       16:  125:		p = NULL;
+       16:  126:		return p;
+        -:  127:	}
+        -:  128:
+        -:  129:	else
+        -:  130:	{
+       16:  131:		return p;
+        -:  132:	}
+        -:  133:}
+       16:  134:int tamanho(Pilha *p)
+        -:  135:{
+       16:  136:	if (exists(p))
+        -:  137:	{
+        8:  138:		return p->size;
+        -:  139:	}
+        -:  140:
+        -:  141:	else
+        -:  142:	{
+        8:  143:		return -1;
+        -:  144:	}
+        -:  145:}
+       24:  146:int isFULL(Pilha *p)
+        -:  147:{
+       24:  148:	if (exists(p))
+        -:  149:	{
+        -:  150:
+        8:  151:		return (p->size == p->max);
+        -:  152:	}
+        -:  153:
+        -:  154:	else
+        -:  155:	{
+       16:  156:		return -1;
+        -:  157:	}
+        -:  158:}
+      296:  159:int exists(Pilha *p)
+        -:  160:{
+      296:  161:	if (p == NULL)
+        -:  162:	{
+      136:  163:		return 0;
+        -:  164:	}
+        -:  165:
+        -:  166:	else
+        -:  167:	{
+      160:  168:		return 1;
+        -:  169:	}
+        -:  170:}
+        -:  171:
+       16:  172:Pilha *set_size(Pilha *p, int tam)
+        -:  173:{
+       16:  174:	if (exists(p))
+        -:  175:	{
+        8:  176:		p->max = tam;
+        8:  177:		return p;
+        -:  178:	}
+        -:  179:	else
+        -:  180:	{
+        8:  181:		return p;
+        -:  182:	}
+        -:  183:}
