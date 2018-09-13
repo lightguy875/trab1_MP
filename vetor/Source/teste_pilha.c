@@ -119,6 +119,19 @@ TEST(free_stack_test,testar_free_stack_function)
         EXPECT_EQ(NULL,free_stack(p));
 }
 
+TEST(tamanho_test,testar_tamanho_da_pilha)
+{
+        Pilha *p = NULL;
+        Dado k;
+        k.x = 20;
+        EXPECT_EQ(-1,tamanho(p));
+        p = create_stack(p,20);
+        EXPECT_EQ(0,tamanho(p));
+        push(p,k);
+        EXPECT_EQ(1,tamanho(p));
+
+}
+
 int main(int argc, char **argv)
 {
         ::testing::InitGoogleTest(&argc, argv);
