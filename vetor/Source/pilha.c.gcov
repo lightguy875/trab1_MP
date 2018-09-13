@@ -1,0 +1,180 @@
+        -:    0:Source:pilha.c
+        -:    0:Graph:obj/pilha.gcno
+        -:    0:Data:obj/pilha.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include "../include/pilha.h"
+        -:    4:
+       10:    5:Pilha * create_stack(Pilha *p, int max_tam)
+        -:    6:{
+       10:    7:	if (!exists(p))
+        -:    8:	{
+        9:    9:        p = (Pilha *) malloc(sizeof(Pilha));
+        9:   10:		p->valor = (Dado *) malloc(max_tam * sizeof(Dado));
+        9:   11:		p->max_tam = max_tam;
+        9:   12:		p->size = 0;
+        9:   13:		return p;
+        -:   14:	}
+        -:   15:
+        -:   16:	else
+        -:   17:	{
+        1:   18:		return p;
+        -:   19:		
+        -:   20:		
+        -:   21:		
+        -:   22:	}
+        -:   23:}
+        -:   24:
+        6:   25:int push(Pilha *p, Dado elem)
+        -:   26:{
+        6:   27:	if (exists(p))
+        -:   28:	{
+        5:   29:		if (p->size < p->max_tam)
+        -:   30:		{
+        4:   31:			p->valor[p->size] = elem;
+        4:   32:			p->size++;
+        4:   33:			return 0;
+        -:   34:		}
+        -:   35:		else
+        -:   36:		{
+        -:   37:			
+        1:   38:			return -1;
+        -:   39:		}
+        -:   40:	}
+        -:   41:
+        -:   42:	else
+        -:   43:	{
+        -:   44:		
+        1:   45:		return -1;
+        -:   46:	}
+        -:   47:}
+        -:   48:
+        4:   49:int pop(Pilha *p,Dado * elemento)
+        -:   50:{
+        -:   51:
+        4:   52:	if (exists(p))
+        -:   53:	{
+        -:   54:
+        3:   55:		if (p->size == 0)
+        2:   56:			return -1;
+        1:   57:		p->size--;
+        1:   58:		*elemento = p->valor[p->size];
+        1:   59:		return 0;
+        -:   60:	}
+        -:   61:
+        -:   62:	else
+        -:   63:	{
+        -:   64:		
+        1:   65:		return -1;
+        -:   66:	}
+        -:   67:	
+        -:   68:}
+        -:   69:
+        2:   70:int empty(Pilha *p)
+        -:   71:{
+        -:   72:
+        2:   73:	if (exists(p))
+        -:   74:	{
+        1:   75:		return (p->size == 0);
+        -:   76:	}
+        -:   77:
+        -:   78:	else
+        -:   79:	{
+        1:   80:		printf("A pilha não existe \n");
+        1:   81:		return -1;
+        -:   82:	}
+        -:   83:
+        -:   84:} 
+        -:   85:
+    #####:   86:void print(Pilha *p)
+        -:   87:{
+    #####:   88:	if (exists(p))
+        -:   89:	{
+        -:   90:
+    #####:   91:		for (int i = 0; i < p->size; ++i)
+        -:   92:		{
+    #####:   93:			printf("\t\t%d\n", p->valor[i]);
+        -:   94:		}
+        -:   95:	}
+        -:   96:
+        -:   97:	else
+        -:   98:	{
+        -:   99:		
+        -:  100:	}
+    #####:  101:}
+        6:  102:Pilha * free_stack(Pilha *p)
+        -:  103:{
+        6:  104:	if (exists(p))
+        -:  105:	{
+        6:  106:		free(p->valor);
+        6:  107:		p->valor = NULL;
+        6:  108:		free(p);
+        6:  109:		p = NULL;
+        6:  110:		return p;
+        -:  111:	}
+        -:  112:
+        -:  113:	else
+        -:  114:	{
+        -:  115:		
+    #####:  116:		return p;
+        -:  117:	}
+        -:  118:}
+    #####:  119:int tamanho(Pilha *p)
+        -:  120:{
+    #####:  121:	if (exists(p))
+        -:  122:	{
+    #####:  123:		return p->size;
+        -:  124:	}
+        -:  125:
+        -:  126:	else
+        -:  127:	{
+        -:  128:		
+    #####:  129:		return -1;
+        -:  130:	}
+        -:  131:}
+        1:  132:int isFULL(Pilha *p)
+        -:  133:{
+        1:  134:	if (exists(p))
+        -:  135:	{
+        -:  136:
+        1:  137:		return (p->size == p->max_tam);
+        -:  138:	}
+        -:  139:
+        -:  140:	else
+        -:  141:	{
+        -:  142:		
+    #####:  143:		return -1;
+        -:  144:	}
+        -:  145:}
+       36:  146:int exists(Pilha *p)
+        -:  147:{
+       36:  148:	if (p == NULL)
+        -:  149:	{
+       16:  150:		return 0;
+        -:  151:	}
+        -:  152:	
+        -:  153:	else
+        -:  154:	{
+       20:  155:		return 1;
+        -:  156:	}
+        -:  157:	
+        -:  158:}
+        2:  159:int top(Pilha *p, Dado *elemento)
+        -:  160:{
+        2:  161:	if (exists(p))
+        -:  162:{
+        -:  163:
+        1:  164:	if (p->size == 0)
+    #####:  165:		return -1;
+        1:  166:	*elemento = p->valor[p->size-1];
+        1:  167:	return 0;
+        -:  168:}
+        -:  169:
+        -:  170:else
+        -:  171:{
+        -:  172:	
+        1:  173:	return -1;
+        -:  174:}
+        -:  175:}

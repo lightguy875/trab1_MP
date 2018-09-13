@@ -1,7 +1,7 @@
 ID$@IR =../include
 IDIR = ../include
 CC= g++ -std=c++11
-CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs -lgtest -lgtest_main  -fpermissive
+CFLAGS=-I$(IDIR) -ftest-coverage -fprofile-arcs  -fpermissive -lgtest #-lgtest_main  
 
 ODIR=../Source/obj
 LDIR =../Source
