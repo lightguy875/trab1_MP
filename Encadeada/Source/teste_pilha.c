@@ -1,9 +1,20 @@
+/**
+ * @brief Arquivo de testes das funções
+ * 
+ * @file teste_pilha.c
+ * @author your name
+ * @date 2018-09-13
+ */
+
 #include <iostream>
 #include "../include/pilha.h"
 #include <gtest/gtest.h>
 
 using namespace std;
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa condição de existência da pilha
+ */
 TEST(existence_condition, testar_existencia_da_pilha)
 {
 	Pilha *p = NULL;
@@ -13,6 +24,10 @@ TEST(existence_condition, testar_existencia_da_pilha)
 	p = free_stack(p);
 	EXPECT_EQ(0, exists(p));
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa condição de existência de todas as funções
+ */
 TEST(existence_condition_all_functions, testar_existencia_todas_funcoes)
 {
 	Pilha *p = NULL;
@@ -27,11 +42,19 @@ TEST(existence_condition_all_functions, testar_existencia_todas_funcoes)
 	EXPECT_EQ(-1, top(p, &k));
 	EXPECT_EQ(-1, empty(p));
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa a criação da pilha
+ */
 TEST(create_stack_test, Criar_pilha)
 {
 	Pilha *p = NULL;
 	EXPECT_NE(NULL, create_stack(p, 30));
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa função free_stack
+ */
 TEST(free_pilha_test, teste_desalocamento_da_pilha)
 {
 	Pilha *p = NULL;
@@ -39,7 +62,10 @@ TEST(free_pilha_test, teste_desalocamento_da_pilha)
 	p = create_stack(p, 10);
 	EXPECT_EQ(NULL, free_stack(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa função push
+ */
 TEST(push_pilha_test, Adicionar_elemento_na_pilha)
 {
 	Pilha *p = NULL;
@@ -54,6 +80,10 @@ TEST(push_pilha_test, Adicionar_elemento_na_pilha)
 	push(p, k);
 	EXPECT_EQ(-1, push(p, k));
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ *  Testa função pop
+ */
 TEST(pop_pilha_test, retirar_elemento_na_pilha)
 {
 	Dado k;
@@ -65,7 +95,10 @@ TEST(pop_pilha_test, retirar_elemento_na_pilha)
 	EXPECT_EQ(0, pop(p));
 	EXPECT_EQ(-1, pop(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa função empty
+ */
 TEST(empty_pilha_test, checar_pilha_vazia)
 {
 	Pilha *p = NULL;
@@ -76,7 +109,10 @@ TEST(empty_pilha_test, checar_pilha_vazia)
 	push(p, k);
 	EXPECT_EQ(false, empty(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa função is FULL
+ */
 TEST(isFULL_test, checar_pilha_esta_cheia)
 {
 	Pilha *p = NULL;
@@ -84,7 +120,10 @@ TEST(isFULL_test, checar_pilha_esta_cheia)
 	p = create_stack(p, 30);
 	EXPECT_EQ(0, isFULL(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Testa função set_size
+ */
 TEST(set_size_test, checar_se_tamanho_foi_modificado)
 {
 	int k = 10;
@@ -93,7 +132,10 @@ TEST(set_size_test, checar_se_tamanho_foi_modificado)
 	p = set_size(p, k);
 	EXPECT_EQ(k, p->max);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ *  Testa função top
+ */
 TEST(top_function_test, testar_top)
 {
 	Dado k;
@@ -108,7 +150,10 @@ TEST(top_function_test, testar_top)
 	EXPECT_EQ(0, top(p, &k));
 	EXPECT_EQ(20, k.x);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ *  Testa função tamanho
+ */
 TEST(tamanho_function_test, testar_tamanho)
 {
 
@@ -117,7 +162,10 @@ TEST(tamanho_function_test, testar_tamanho)
 	p = create_stack(p, 20);
 	EXPECT_EQ(0, tamanho(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ *  Testa função print
+ */
 TEST(print_function_test, testar_print)
 {
 	Dado l;

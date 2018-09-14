@@ -1,12 +1,26 @@
+/**
+ * @brief Arquivo de definição de funções
+ * 
+ * @file pilha.h
+ * @author your name
+ * @date 2018-09-13
+ */
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * @brief Estrutura do tipo de dado utilizado no programa
+ * no caso Dado como ItemType
+ * 
+ */
 typedef struct ItemType
 {
 	int x;
 
 } Dado;
-
+/**
+ * @brief Estrutura de um elemento da pilha
+ * 
+ */
 typedef struct ElementoLista
 {
 	Dado pedaco;
@@ -14,6 +28,10 @@ typedef struct ElementoLista
 
 } Elemento;
 
+/**
+ * @brief Estrutura da cabeça de uma pilha
+ * 
+ */
 typedef struct pilha
 {
 	Elemento *inicio;

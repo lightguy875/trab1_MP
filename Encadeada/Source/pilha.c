@@ -1,16 +1,42 @@
+/**
+ * @brief Arquivo de implementação das funções
+ * 
+ * @file pilha.c
+ * @author Luís Eduardo
+ * @date 2018-09-13
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "../include/pilha.h"
-
+/**
+ * @brief Aloca memória para a pilha
+ * 
+ * @param p 
+ * @param max_tam 
+ * @return Pilha* 
+ */
 Pilha *create_stack(Pilha *p, int max_tam)
 {
-	p = (Pilha *)malloc(sizeof(Pilha));
-	p->inicio = NULL;
-	p->max = max_tam;
-	p->size = 0;
-	return p;
+	if (!exists(p))
+	{
+		p = (Pilha *)malloc(sizeof(Pilha));
+		p->inicio = NULL;
+		p->max = max_tam;
+		p->size = 0;
+		return p;
+	}
+	else
+	{
+		return p;
+	}
 }
-
+/**
+ * @brief Adiciona um dado para a pilha
+ * 
+ * @param p 
+ * @param elem 
+ * @return int 
+ */
 int push(Pilha *p, Dado elem)
 {
 	if (exists(p))
@@ -37,6 +63,13 @@ int push(Pilha *p, Dado elem)
 		return -1;
 	}
 }
+/**
+ * @brief Retorna elemento do topo da pilha
+ * 
+ * @param p 
+ * @param elem 
+ * @return int 
+ */
 int top(Pilha *p, Dado *elem)
 {
 	if (exists(p))
@@ -52,7 +85,12 @@ int top(Pilha *p, Dado *elem)
 		return -1;
 	}
 }
-
+/**
+ * @brief retira ultimo elemento da pilha
+ * 
+ * @param p 
+ * @return int 
+ */
 int pop(Pilha *p)
 {
 	if (exists(p))
@@ -72,7 +110,12 @@ int pop(Pilha *p)
 		return -1;
 	}
 }
-
+/**
+ * @brief Verifica se a pilha está vazia
+ * 
+ * @param p 
+ * @return int 
+ */
 int empty(Pilha *p)
 {
 	if (exists(p))
@@ -85,7 +128,12 @@ int empty(Pilha *p)
 		return -1;
 	}
 }
-
+/**
+ * @brief Printa toda a pilha
+ * 
+ * @param p 
+ * @return int 
+ */
 int print_pilha(Pilha *p)
 {
 	if (exists(p))
@@ -107,6 +155,12 @@ int print_pilha(Pilha *p)
 		return -1;
 	}
 }
+/**
+ * @brief Apaga a pilha da memória
+ * 
+ * @param p 
+ * @return Pilha* 
+ */
 Pilha *free_stack(Pilha *p)
 {
 	if (exists(p))
@@ -131,6 +185,12 @@ Pilha *free_stack(Pilha *p)
 		return p;
 	}
 }
+/**
+ * @brief Retorna o tamanho atual da pilha
+ * 
+ * @param p 
+ * @return int 
+ */
 int tamanho(Pilha *p)
 {
 	if (exists(p))
@@ -143,6 +203,12 @@ int tamanho(Pilha *p)
 		return -1;
 	}
 }
+/**
+ * @brief Verifica se a pilha atingiu o tamanho máximo
+ * 
+ * @param p 
+ * @return int 
+ */
 int isFULL(Pilha *p)
 {
 	if (exists(p))
@@ -156,6 +222,12 @@ int isFULL(Pilha *p)
 		return -1;
 	}
 }
+/**
+ * @brief Verifica se a pilha foi alocada
+ * Nesse caso se ela existe
+ * @param p 
+ * @return int 
+ */
 int exists(Pilha *p)
 {
 	if (p == NULL)
@@ -168,7 +240,13 @@ int exists(Pilha *p)
 		return 1;
 	}
 }
-
+/**
+ * @brief Redefine o tamanho da pilha
+ * 
+ * @param p 
+ * @param tam 
+ * @return Pilha* 
+ */
 Pilha *set_size(Pilha *p, int tam)
 {
 	if (exists(p))
