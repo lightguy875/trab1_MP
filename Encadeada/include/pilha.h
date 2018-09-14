@@ -2,7 +2,7 @@
  * @brief Arquivo de definição de funções
  * 
  * @file pilha.h
- * @author your name
+ * @author Luís Eduardo
  * @date 2018-09-13
  */
 #include <stdlib.h>

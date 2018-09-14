@@ -2,7 +2,7 @@
  * @brief Arquivo de testes das funções
  * 
  * @file teste_pilha.c
- * @author your name
+ * @author Luís Eduardo
  * @date 2018-09-13
  */
 
