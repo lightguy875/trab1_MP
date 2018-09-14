@@ -1,0 +1,306 @@
+\hypertarget{pilha_8h}{}\section{include/pilha.h File Reference}
+\label{pilha_8h}\index{include/pilha.\+h@{include/pilha.\+h}}
+
+
+Arquivo de definição.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_item_type}{Item\+Type}}
+\begin{DoxyCompactList}\small\item\em Tipo de elemento inserido na pilha. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpilha}{pilha}}
+\begin{DoxyCompactList}\small\item\em Estrutura básica da pilha ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}\label{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}} 
+typedef struct \mbox{\hyperlink{struct_item_type}{Item\+Type}} \mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}}
+\begin{DoxyCompactList}\small\item\em Tipo de elemento inserido na pilha. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}\label{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}} 
+typedef struct \mbox{\hyperlink{structpilha}{pilha}} \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}
+\begin{DoxyCompactList}\small\item\em Estrutura básica da pilha ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$ \mbox{\hyperlink{pilha_8h_a823594811b738a9c4d115da17854366d}{create\+\_\+stack}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, int max\+\_\+tam)
+\begin{DoxyCompactList}\small\item\em Criar estrutura básica da pilha com tamanho máximo definido. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_ac389fd2e3a37e811916a40e5df29e698}{top}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, \mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} element)
+\begin{DoxyCompactList}\small\item\em Pega primeiro elemento da pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a6313a9388e8d0dc6694511840b52d284}{push}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, \mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} elem)
+\begin{DoxyCompactList}\small\item\em Adiciona elemento para a pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a3cdfdad6787f0897820d05f0e094695b}{pop}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, \mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} $\ast$elemento)
+\begin{DoxyCompactList}\small\item\em Retira ultimo elemento da pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a23746fe785492386349448876e7a9ffb}{empty}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Verifica se a pilha esta vazia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a4cef2f02b7f0ed5cb999cfbf54ef6e84}{print\+\_\+pilha}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em printa todos os elementos da pilha \end{DoxyCompactList}\item 
+\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$ \mbox{\hyperlink{pilha_8h_a2bac69c86f29517385a9b476813525c7}{free\+\_\+stack}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em limpa a pilha \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_af35001ddc7fe83a0070d2b002b891d5f}{tamanho}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em verifica tamalho da pilha \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a9b7aa0def3486a6e9e9cff6e575f7e46}{is\+F\+U\+LL}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em verifica se a pilha atinge o tamanho maximo \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_aada16411d3871d4012d53eda11445cfc}{exists}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em verifica se a pilha existe \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}{top}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, \mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} $\ast$elemento)
+\begin{DoxyCompactList}\small\item\em Acessa ultimo elemento da pilha. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$ \mbox{\hyperlink{pilha_8h_a0d899f4c317a0a32e6a3faa1b90e25c5}{set\+\_\+size}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, int \mbox{\hyperlink{pilha_8c_af35001ddc7fe83a0070d2b002b891d5f}{tamanho}})
+\begin{DoxyCompactList}\small\item\em Redefine o tamanho maximo da pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Arquivo de definição. 
+
+\begin{DoxyAuthor}{Author}
+Luís Eduardo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2018-\/09-\/13 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{pilha_8h_a823594811b738a9c4d115da17854366d}\label{pilha_8h_a823594811b738a9c4d115da17854366d}} 
+\index{pilha.\+h@{pilha.\+h}!create\+\_\+stack@{create\+\_\+stack}}
+\index{create\+\_\+stack@{create\+\_\+stack}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{create\+\_\+stack()}{create\_stack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}$\ast$ create\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{int}]{max\+\_\+tam }\end{DoxyParamCaption})}
+
+
+
+Criar estrutura básica da pilha com tamanho máximo definido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em max\+\_\+tam} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pilha$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a23746fe785492386349448876e7a9ffb}\label{pilha_8h_a23746fe785492386349448876e7a9ffb}} 
+\index{pilha.\+h@{pilha.\+h}!empty@{empty}}
+\index{empty@{empty}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily int empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica se a pilha esta vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_aada16411d3871d4012d53eda11445cfc}\label{pilha_8h_aada16411d3871d4012d53eda11445cfc}} 
+\index{pilha.\+h@{pilha.\+h}!exists@{exists}}
+\index{exists@{exists}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily int exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+verifica se a pilha existe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a2bac69c86f29517385a9b476813525c7}\label{pilha_8h_a2bac69c86f29517385a9b476813525c7}} 
+\index{pilha.\+h@{pilha.\+h}!free\+\_\+stack@{free\+\_\+stack}}
+\index{free\+\_\+stack@{free\+\_\+stack}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+stack()}{free\_stack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}$\ast$ free\+\_\+stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+limpa a pilha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pilha$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a9b7aa0def3486a6e9e9cff6e575f7e46}\label{pilha_8h_a9b7aa0def3486a6e9e9cff6e575f7e46}} 
+\index{pilha.\+h@{pilha.\+h}!is\+F\+U\+LL@{is\+F\+U\+LL}}
+\index{is\+F\+U\+LL@{is\+F\+U\+LL}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{is\+F\+U\+L\+L()}{isFULL()}}
+{\footnotesize\ttfamily int is\+F\+U\+LL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+verifica se a pilha atinge o tamanho maximo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a3cdfdad6787f0897820d05f0e094695b}\label{pilha_8h_a3cdfdad6787f0897820d05f0e094695b}} 
+\index{pilha.\+h@{pilha.\+h}!pop@{pop}}
+\index{pop@{pop}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} $\ast$}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Retira ultimo elemento da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em elemento} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a4cef2f02b7f0ed5cb999cfbf54ef6e84}\label{pilha_8h_a4cef2f02b7f0ed5cb999cfbf54ef6e84}} 
+\index{pilha.\+h@{pilha.\+h}!print\+\_\+pilha@{print\+\_\+pilha}}
+\index{print\+\_\+pilha@{print\+\_\+pilha}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+pilha()}{print\_pilha()}}
+{\footnotesize\ttfamily int print\+\_\+pilha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+printa todos os elementos da pilha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a6313a9388e8d0dc6694511840b52d284}\label{pilha_8h_a6313a9388e8d0dc6694511840b52d284}} 
+\index{pilha.\+h@{pilha.\+h}!push@{push}}
+\index{push@{push}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily int push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}}}]{elem }\end{DoxyParamCaption})}
+
+
+
+Adiciona elemento para a pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em elem} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a0d899f4c317a0a32e6a3faa1b90e25c5}\label{pilha_8h_a0d899f4c317a0a32e6a3faa1b90e25c5}} 
+\index{pilha.\+h@{pilha.\+h}!set\+\_\+size@{set\+\_\+size}}
+\index{set\+\_\+size@{set\+\_\+size}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+size()}{set\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}$\ast$ set\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{int}]{tam }\end{DoxyParamCaption})}
+
+
+
+Redefine o tamanho maximo da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em tamanho} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pilha$\ast$
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em tam} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pilha$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_af35001ddc7fe83a0070d2b002b891d5f}\label{pilha_8h_af35001ddc7fe83a0070d2b002b891d5f}} 
+\index{pilha.\+h@{pilha.\+h}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{tamanho()}{tamanho()}}
+{\footnotesize\ttfamily int tamanho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+verifica tamalho da pilha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_ac389fd2e3a37e811916a40e5df29e698}\label{pilha_8h_ac389fd2e3a37e811916a40e5df29e698}} 
+\index{pilha.\+h@{pilha.\+h}!top@{top}}
+\index{top@{top}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}}}]{element }\end{DoxyParamCaption})}
+
+
+
+Pega primeiro elemento da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em element} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}\label{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}} 
+\index{pilha.\+h@{pilha.\+h}!top@{top}}
+\index{top@{top}!pilha.\+h@{pilha.\+h}}
+\subsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}{Dado}} $\ast$}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Acessa ultimo elemento da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em elemento} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

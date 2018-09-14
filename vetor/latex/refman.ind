@@ -1,0 +1,84 @@
+\begin{theindex}
+
+  \item {create\+\_\+stack}
+    \subitem {pilha.\+c}, \hyperpage{14}
+    \subitem {pilha.\+h}, \hyperpage{8}
+
+  \indexspace
+
+  \item {empty}
+    \subitem {pilha.\+c}, \hyperpage{14}
+    \subitem {pilha.\+h}, \hyperpage{9}
+  \item {exists}
+    \subitem {pilha.\+c}, \hyperpage{15}
+    \subitem {pilha.\+h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {free\+\_\+stack}
+    \subitem {pilha.\+c}, \hyperpage{15}
+    \subitem {pilha.\+h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {include/pilha.\+h}, \hyperpage{7}
+  \item {is\+F\+U\+LL}
+    \subitem {pilha.\+c}, \hyperpage{15}
+    \subitem {pilha.\+h}, \hyperpage{10}
+  \item {Item\+Type}, \hyperpage{5}
+
+  \indexspace
+
+  \item {pilha}, \hyperpage{5}
+  \item {pilha.\+c}
+    \subitem {create\+\_\+stack}, \hyperpage{14}
+    \subitem {empty}, \hyperpage{14}
+    \subitem {exists}, \hyperpage{15}
+    \subitem {free\+\_\+stack}, \hyperpage{15}
+    \subitem {is\+F\+U\+LL}, \hyperpage{15}
+    \subitem {pop}, \hyperpage{16}
+    \subitem {print\+\_\+pilha}, \hyperpage{16}
+    \subitem {push}, \hyperpage{16}
+    \subitem {set\+\_\+size}, \hyperpage{17}
+    \subitem {tamanho}, \hyperpage{17}
+    \subitem {top}, \hyperpage{18}
+  \item {pilha.\+h}
+    \subitem {create\+\_\+stack}, \hyperpage{8}
+    \subitem {empty}, \hyperpage{9}
+    \subitem {exists}, \hyperpage{9}
+    \subitem {free\+\_\+stack}, \hyperpage{9}
+    \subitem {is\+F\+U\+LL}, \hyperpage{10}
+    \subitem {pop}, \hyperpage{10}
+    \subitem {print\+\_\+pilha}, \hyperpage{10}
+    \subitem {push}, \hyperpage{11}
+    \subitem {set\+\_\+size}, \hyperpage{11}
+    \subitem {tamanho}, \hyperpage{12}
+    \subitem {top}, \hyperpage{12}
+  \item {pop}
+    \subitem {pilha.\+c}, \hyperpage{16}
+    \subitem {pilha.\+h}, \hyperpage{10}
+  \item {print\+\_\+pilha}
+    \subitem {pilha.\+c}, \hyperpage{16}
+    \subitem {pilha.\+h}, \hyperpage{10}
+  \item {push}
+    \subitem {pilha.\+c}, \hyperpage{16}
+    \subitem {pilha.\+h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {set\+\_\+size}
+    \subitem {pilha.\+c}, \hyperpage{17}
+    \subitem {pilha.\+h}, \hyperpage{11}
+  \item {Source/pilha.\+c}, \hyperpage{13}
+  \item {Source/teste\+\_\+pilha.\+c}, \hyperpage{18}
+
+  \indexspace
+
+  \item {tamanho}
+    \subitem {pilha.\+c}, \hyperpage{17}
+    \subitem {pilha.\+h}, \hyperpage{12}
+  \item {top}
+    \subitem {pilha.\+c}, \hyperpage{18}
+    \subitem {pilha.\+h}, \hyperpage{12}
+
+\end{theindex}

@@ -1,9 +1,20 @@
+/**
+ * @brief Arquivo de testes
+ * 
+ * @file teste_pilha.c
+ * @author Luís Eduardo
+ * @date 2018-09-13
+ */
+
 #include <iostream>
 #include "../include/pilha.h"
 #include <gtest/gtest.h>
 //#include <catch2/catch.hpp>
 using namespace std;
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função exists
+ */
 TEST(Pilha_exists_tests, test_existences)
 {
         Pilha *p = NULL;
@@ -14,7 +25,10 @@ TEST(Pilha_exists_tests, test_existences)
         p = free_stack(p);
         EXPECT_EQ(0, exists(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função create_stack
+ */
 TEST(create_stack_test, Criar_pilha)
 {
         Pilha *p = NULL;
@@ -23,7 +37,10 @@ TEST(create_stack_test, Criar_pilha)
         p = create_stack(p, 30);
         EXPECT_EQ(p, create_stack(p, 30));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função push_pilha
+ */
 TEST(push_pilha_test, Adicionar_elemento_na_pilha)
 {
         Pilha *p = NULL;
@@ -35,6 +52,10 @@ TEST(push_pilha_test, Adicionar_elemento_na_pilha)
         EXPECT_EQ(-1, push(p, elem));
         free_stack(p);
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função pop
+ */
 TEST(pop_pilha_test, retirar_elemento_na_pilha)
 {
         Dado elem;
@@ -48,7 +69,10 @@ TEST(pop_pilha_test, retirar_elemento_na_pilha)
         EXPECT_EQ(-1, pop(p, &elem));
         free_stack(p);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função empty
+ */
 TEST(empty_pilha_test, checar_pilha_vazia)
 {
         Pilha *p = NULL;
@@ -57,7 +81,10 @@ TEST(empty_pilha_test, checar_pilha_vazia)
         EXPECT_EQ(1, empty(p));
         free_stack(p);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função isFULL
+ */
 TEST(isFULL_test, checar_pilha_esta_cheia)
 {
         Pilha *p = NULL;
@@ -68,7 +95,10 @@ TEST(isFULL_test, checar_pilha_esta_cheia)
         EXPECT_EQ(0, isFULL(p));
         free_stack(p);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função exists 2
+ */
 TEST(Pilha_exists_test, checar_se_a_pilha_existe)
 {
         Pilha *p = NULL;
@@ -76,7 +106,10 @@ TEST(Pilha_exists_test, checar_se_a_pilha_existe)
         p = create_stack(p, 2);
         EXPECT_EQ(1, exists(p));
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função top
+ */
 TEST(Pilha_top_access, checar_primeiro_elemento_da_pilha)
 {
 
@@ -90,7 +123,10 @@ TEST(Pilha_top_access, checar_primeiro_elemento_da_pilha)
         EXPECT_EQ(30, elem.x);
         free_stack(p);
 }
-
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função set_size
+ */
 TEST(pilha_set_size_test, testar_alteracao_tamanho)
 {
 
@@ -100,36 +136,45 @@ TEST(pilha_set_size_test, testar_alteracao_tamanho)
         p = set_size(p, 10);
         EXPECT_EQ(10, p->max_tam);
 }
-
-TEST(print_pilha_test,testar_print_da_pilha)
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função print
+ */
+TEST(print_pilha_test, testar_print_da_pilha)
 {
         Pilha *p = NULL;
         Dado l;
         l.x = 30;
-        EXPECT_EQ(-1,print_pilha(p));
-        p = create_stack(p,10);
-        push(p,l);
-        EXPECT_EQ(0,print_pilha(p));
+        EXPECT_EQ(-1, print_pilha(p));
+        p = create_stack(p, 10);
+        push(p, l);
+        EXPECT_EQ(0, print_pilha(p));
 }
-TEST(free_stack_test,testar_free_stack_function)
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função free_stack
+ */
+TEST(free_stack_test, testar_free_stack_function)
 {
         Pilha *p = NULL;
-        EXPECT_EQ(NULL,free_stack(p));
-        p = create_stack(p,20);
-        EXPECT_EQ(NULL,free_stack(p));
+        EXPECT_EQ(NULL, free_stack(p));
+        p = create_stack(p, 20);
+        EXPECT_EQ(NULL, free_stack(p));
 }
-
-TEST(tamanho_test,testar_tamanho_da_pilha)
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste da função tamanho
+ */
+TEST(tamanho_test, testar_tamanho_da_pilha)
 {
         Pilha *p = NULL;
         Dado k;
         k.x = 20;
-        EXPECT_EQ(-1,tamanho(p));
-        p = create_stack(p,20);
-        EXPECT_EQ(0,tamanho(p));
-        push(p,k);
-        EXPECT_EQ(1,tamanho(p));
-
+        EXPECT_EQ(-1, tamanho(p));
+        p = create_stack(p, 20);
+        EXPECT_EQ(0, tamanho(p));
+        push(p, k);
+        EXPECT_EQ(1, tamanho(p));
 }
 
 int main(int argc, char **argv)

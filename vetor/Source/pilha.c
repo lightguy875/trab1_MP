@@ -1,7 +1,21 @@
+/**
+ * @brief Arquivo de funções
+ * 
+ * @file pilha.c
+ * @author Luís Eduardo
+ * @date 2018-09-13
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../include/pilha.h"
-
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @param max_tam 
+ * @return Pilha* 
+ */
 Pilha *create_stack(Pilha *p, int max_tam)
 {
 	if (!exists(p))
@@ -18,6 +32,13 @@ Pilha *create_stack(Pilha *p, int max_tam)
 		return p;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @param elem 
+ * @return int 
+ */
 
 int push(Pilha *p, Dado elem)
 {
@@ -42,7 +63,13 @@ int push(Pilha *p, Dado elem)
 		return -1;
 	}
 }
-
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @param elemento 
+ * @return int 
+ */
 int pop(Pilha *p, Dado *elemento)
 {
 
@@ -62,7 +89,12 @@ int pop(Pilha *p, Dado *elemento)
 		return -1;
 	}
 }
-
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return int 
+ */
 int empty(Pilha *p)
 {
 
@@ -76,7 +108,12 @@ int empty(Pilha *p)
 		return -1;
 	}
 }
-
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return int 
+ */
 int print_pilha(Pilha *p)
 {
 	if (exists(p))
@@ -92,9 +129,14 @@ int print_pilha(Pilha *p)
 	else
 	{
 		return -1;
-
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return Pilha* 
+ */
 Pilha *free_stack(Pilha *p)
 {
 	if (exists(p))
@@ -112,6 +154,12 @@ Pilha *free_stack(Pilha *p)
 		return p;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return int 
+ */
 int tamanho(Pilha *p)
 {
 	if (exists(p))
@@ -125,6 +173,12 @@ int tamanho(Pilha *p)
 		return -1;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return int 
+ */
 int isFULL(Pilha *p)
 {
 	if (exists(p))
@@ -139,6 +193,12 @@ int isFULL(Pilha *p)
 		return -1;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @return int 
+ */
 int exists(Pilha *p)
 {
 	if (p == NULL)
@@ -151,6 +211,13 @@ int exists(Pilha *p)
 		return 1;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @param elemento 
+ * @return int 
+ */
 int top(Pilha *p, Dado *elemento)
 {
 	if (exists(p))
@@ -168,6 +235,13 @@ int top(Pilha *p, Dado *elemento)
 		return -1;
 	}
 }
+/**
+ * @brief 
+ * 
+ * @param p 
+ * @param tam 
+ * @return Pilha* 
+ */
 Pilha *set_size(Pilha *p, int tam)
 {
 	if (exists(p) && tam > p->size)
