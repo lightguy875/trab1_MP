@@ -40,3 +40,26 @@ Para limpar o arquivo de cobertura de testes:
 ´´´
 $ make clean_coverage
 ´´´
+
+# Arquivos de documentação
+
+## Site html
+Para acessar o site contendo as informações do programa basta acessar o arquivo index.html a abri-lo com um navegador da pasta html contida dentro de cada pasta Encadeada ou Vetor:
+```
+$ Encadeada/html/index.html
+```
+
+```
+$ vetor/html/index.html
+```
+## Arquivo pdf
+Para acessar o arquivo pdf basta entrar na pasta latex e abrir o arquivo refman contendo toda a documentação em arquivo latex:
+```
+$ Encadeada/latex/refman.pdf
+```
+```
+$ vetor/latex/refman.pdf
+```
+
+
+
