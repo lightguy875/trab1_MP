@@ -38,6 +38,10 @@ Para limpar o arquivo de cobertura de testes:
 ```
 $ make clean_coverage
 ```
+Para limpar todos os arquivos de cobertura de testes:
+```
+$ make clean_all
+```
 
 # Arquivos de documentação
 
