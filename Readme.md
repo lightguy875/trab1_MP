@@ -12,7 +12,6 @@ Para compilar o software e necessário estar na pasta Source e usar o seguinte c
 
 ```
 $ make
-
 ```
 
 ## Como rodar os testes e analisar a cobertura
