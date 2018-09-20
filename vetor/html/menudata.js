@@ -22,14 +22,14 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
+{text:"Página Principal",url:"index.html"},
 {text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html",children:[
+{text:"Lista de Classes",url:"annotated.html"},
+{text:"Índice dos Componentes",url:"classes.html"}]},
+{text:"Arquivos",url:"files.html",children:[
+{text:"Lista de Arquivos",url:"files.html"},
+{text:"Membros dos Arquivos",url:"globals.html",children:[
+{text:"Todos",url:"globals.html",children:[
 {text:"c",url:"globals.html#index_c"},
 {text:"d",url:"globals.html#index_d"},
 {text:"e",url:"globals.html#index_e"},
@@ -38,7 +38,7 @@ var menudata={children:[
 {text:"p",url:"globals.html#index_p"},
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"}]},
-{text:"Functions",url:"globals_func.html",children:[
+{text:"Funções",url:"globals_func.html",children:[
 {text:"c",url:"globals_func.html#index_c"},
 {text:"e",url:"globals_func.html#index_e"},
 {text:"f",url:"globals_func.html#index_f"},
@@ -46,4 +46,4 @@ var menudata={children:[
 {text:"p",url:"globals_func.html#index_p"},
 {text:"s",url:"globals_func.html#index_s"},
 {text:"t",url:"globals_func.html#index_t"}]},
-{text:"Typedefs",url:"globals_type.html"}]}]}]}
+{text:"Definições de Tipos",url:"globals_type.html"}]}]}]}

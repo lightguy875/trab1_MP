@@ -1,4 +1,4 @@
-\hypertarget{pilha_8h}{}\section{include/pilha.h File Reference}
+\hypertarget{pilha_8h}{}\section{Referência do Arquivo include/pilha.h}
 \label{pilha_8h}\index{include/pilha.\+h@{include/pilha.\+h}}
 
 
@@ -7,7 +7,7 @@ Arquivo de definição.
 
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
-\subsection*{Classes}
+\subsection*{Componentes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_item_type}{Item\+Type}}
@@ -15,7 +15,7 @@ struct \mbox{\hyperlink{struct_item_type}{Item\+Type}}
 struct \mbox{\hyperlink{structpilha}{pilha}}
 \begin{DoxyCompactList}\small\item\em Estrutura básica da pilha ~\newline
  \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Typedefs}
+\subsection*{Definições de Tipos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}\label{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}} 
@@ -25,7 +25,7 @@ typedef struct \mbox{\hyperlink{struct_item_type}{Item\+Type}} \mbox{\hyperlink{
 typedef struct \mbox{\hyperlink{structpilha}{pilha}} \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}
 \begin{DoxyCompactList}\small\item\em Estrutura básica da pilha ~\newline
  \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Functions}
+\subsection*{Funções}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$ \mbox{\hyperlink{pilha_8h_a823594811b738a9c4d115da17854366d}{create\+\_\+stack}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$p, int max\+\_\+tam)
@@ -54,18 +54,18 @@ int \mbox{\hyperlink{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}{top}} (\mbox{\h
 \begin{DoxyCompactList}\small\item\em Redefine o tamanho maximo da pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsection{Descrição detalhada}
 Arquivo de definição. 
 
-\begin{DoxyAuthor}{Author}
+\begin{DoxyAuthor}{Autor}
 Luís Eduardo 
 \end{DoxyAuthor}
-\begin{DoxyDate}{Date}
+\begin{DoxyDate}{Data}
 2018-\/09-\/13 
 \end{DoxyDate}
 
 
-\subsection{Function Documentation}
+\subsection{Funções}
 \mbox{\Hypertarget{pilha_8h_a823594811b738a9c4d115da17854366d}\label{pilha_8h_a823594811b738a9c4d115da17854366d}} 
 \index{pilha.\+h@{pilha.\+h}!create\+\_\+stack@{create\+\_\+stack}}
 \index{create\+\_\+stack@{create\+\_\+stack}!pilha.\+h@{pilha.\+h}}
@@ -77,13 +77,13 @@ Luís Eduardo
 Criar estrutura básica da pilha com tamanho máximo definido. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em max\+\_\+tam} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -115,11 +115,11 @@ Pilha$\ast$
 Verifica se a pilha esta vazia. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -148,11 +148,11 @@ int
 verifica se a pilha existe 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -180,11 +180,11 @@ int
 limpa a pilha 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -217,11 +217,11 @@ Pilha$\ast$
 verifica se a pilha atinge o tamanho maximo 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -251,13 +251,13 @@ int
 Retira ultimo elemento da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em elemento} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -292,11 +292,11 @@ int
 printa todos os elementos da pilha 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -329,13 +329,13 @@ int
 Adiciona elemento para a pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em elem} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -374,23 +374,23 @@ int
 Redefine o tamanho maximo da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em tamanho} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em tam} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -420,11 +420,11 @@ Pilha$\ast$
 verifica tamalho da pilha 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -453,13 +453,13 @@ int
 Pega primeiro elemento da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em element} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 \mbox{\Hypertarget{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}\label{pilha_8h_a2fce4c1ea8599469bfac4143e646d086}} 
@@ -473,13 +473,13 @@ int
 Acessa ultimo elemento da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em elemento} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 

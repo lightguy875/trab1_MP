@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  19 SEP 2018 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  19 SEP 2018 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,6 +461,26 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/09/02 3.23 The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/09/02 3.23 Babel switching mechanism
+)
+(/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/09/02 3.23 Babel common definitions
+\babel@savecnt=\count119
+\U@D=\dimen148
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count120
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
@@ -502,17 +522,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count119
-\Gm@cntv=\count120
-\c@Gm@tempcnt=\count121
-\Gm@bindingoffset=\dimen148
-\Gm@wd@mp=\dimen149
-\Gm@odd@mp=\dimen150
-\Gm@even@mp=\dimen151
-\Gm@layoutwidth=\dimen152
-\Gm@layoutheight=\dimen153
-\Gm@layouthoffset=\dimen154
-\Gm@layoutvoffset=\dimen155
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks29
 )
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -533,7 +553,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip68
 \bibsep=\skip69
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count122
+\c@NAT@ctr=\count124
 )
 (/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -567,8 +587,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip96
 \cftfigindent=\skip97
 \cftfignumwidth=\skip98
-\c@lofdepth=\count123
-\c@lotdepth=\count124
+\c@lofdepth=\count125
+\c@lotdepth=\count126
 \cftbeforelottitleskip=\skip99
 \cftafterlottitleskip=\skip100
 \cftbeforetabskip=\skip101
@@ -632,16 +652,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen156
-\Hy@linkcounter=\count125
-\Hy@pagecounter=\count126
+\@linkdim=\dimen157
+\Hy@linkcounter=\count127
+\Hy@pagecounter=\count128
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count127
+\Hy@SavedSpaceFactor=\count129
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -662,17 +682,17 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count128
+\c@Hy@tempcnt=\count130
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen157
-\Fld@menulength=\count129
-\Field@Width=\dimen158
-\Fld@charsize=\dimen159
+\XeTeXLinkMargin=\dimen158
+\Fld@menulength=\count131
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -682,20 +702,20 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count130
-\c@Item=\count131
-\c@Hfootnote=\count132
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
 )
 Package hyperref Info: Driver: hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count133
-\c@bookmark@seq@number=\count134
+\Fld@listcount=\count135
+\c@bookmark@seq@number=\count136
 \Hy@SectionHShift=\skip104
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 105.
-Package hyperref Info: Option `unicode' set `true' on input line 105.
+Package hyperref Info: Option `colorlinks' set `true' on input line 107.
+Package hyperref Info: Option `unicode' set `true' on input line 107.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
@@ -708,15 +728,15 @@ Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen160
-\captionmargin@=\dimen161
-\captionwidth=\dimen162
-\caption@tempdima=\dimen163
-\caption@indent=\dimen164
-\caption@parindent=\dimen165
-\caption@hangindent=\dimen166
+\captionmargin=\dimen161
+\captionmargin@=\dimen162
+\captionwidth=\dimen163
+\caption@tempdima=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
 )
-\c@ContinuedFloat=\count135
+\c@ContinuedFloat=\count137
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -726,50 +746,50 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 119.
 
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 117.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 119.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 117.
+(Font)              scaled to size 8.99994pt on input line 119.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
-\scratchdimen=\dimen167
+\scratchcounter=\count138
+\scratchdimen=\dimen168
 \scratchbox=\box67
-\nofMPsegments=\count137
-\nofMParguments=\count138
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count139
-\MPscratchDim=\dimen168
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen169
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks31
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -823,96 +843,108 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box68
-Package backref Info: ** backref set up for natbib ** on input line 117.
-Package hyperref Info: Link coloring ON on input line 117.
+Package backref Info: ** backref set up for natbib ** on input line 119.
+Package hyperref Info: Link coloring ON on input line 119.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
  (./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Option `pageanchor' set `false' on input line 123.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 123.
+Package hyperref Info: Option `pageanchor' set `false' on input line 125.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 125.
 
-Package hyperref Info: Option `unicode' set `true' on input line 123.
+Package hyperref Info: Option `unicode' set `true' on input line 125.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 128.
+(Font)              scaled to size 12.9599pt on input line 130.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 128.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 128.
+(Font)              scaled to size 6.29996pt on input line 130.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 130.
  (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+LaTeX Font Info:    Try loading font information for U+msa on input line 130.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+LaTeX Font Info:    Try loading font information for U+msb on input line 130.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 130.
+(Font)              scaled to size 10.79993pt on input line 132.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 134.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 135.
+ [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
+(Font)              scaled to size 22.39185pt on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
+(Font)              scaled to size 22.39185pt on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
+(Font)              scaled to size 22.39185pt on input line 137.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 1.
+(Font)              scaled to size 8.99994pt on input line 2.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 24.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
+(Font)              scaled to size 7.19995pt on input line 25.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [1
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+ [1
 
 ])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 136.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 138.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 136.
+(Font)              scaled to size 6.29996pt on input line 138.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
  [2]
-Package hyperref Info: Option `pageanchor' set `true' on input line 138.
+Package hyperref Info: Option `pageanchor' set `true' on input line 140.
 
-Chapter 1.
+Cap\'{\i }tulo 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
+(Font)              scaled to size 18.66588pt on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
+(Font)              scaled to size 18.66588pt on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
+(Font)              scaled to size 18.66588pt on input line 143.
 (./annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -920,25 +952,56 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []  
  []
 
-) [1
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 145.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 145.
+ [1
 
-
-] [2
 
 ]
-Chapter 2.
-(./files.tex) [3] [4
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 145.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 145.
+ [2
 
 ]
-Chapter 3.
+Cap\'{\i }tulo 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 145.
+(./files.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
+ [3]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
+ [4
+
+]
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 147.
 (./struct_item_type.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -951,22 +1014,44 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
 )
 (./structpilha.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-) [5] [6
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
+ [6
 
 ]
-Chapter 4.
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 150.
 (./pilha_8h.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
@@ -987,7 +1072,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
 [7]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 57.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 60.
 
@@ -1000,51 +1091,92 @@ Underfull \hbox (badness 10000) detected at line 63
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 73.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 73.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 86.
 [8]
 Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
 
 Underfull \hbox (badness 10000) detected at line 122
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 154.
 [9]
 Underfull \hbox (badness 10000) detected at line 155
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 175.
 
 Underfull \hbox (badness 10000) detected at line 187
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 223.
 [10]
 Underfull \hbox (badness 10000) detected at line 224
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 246.
 
 Underfull \hbox (badness 10000) detected at line 260
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 287.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
 [11]
 Underfull \hbox (badness 10000) detected at line 299
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 324.
 
 Underfull \hbox (badness 10000) detected at line 338
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 353.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 353.
 [12]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 369.
+
 Underfull \hbox (badness 10000) detected at line 383
 [][][]
  []
@@ -1054,6 +1186,12 @@ Underfull \hbox (badness 10000) detected at line 393
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 415.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 417.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 417.
 [13]
 Underfull \hbox (badness 10000) detected at line 427
 [][][]
@@ -1065,21 +1203,38 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 (Font)              using `T1/pcr/m/n' instead on input line 448.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 448.
 
 Underfull \hbox (badness 10000) detected at line 462
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 468.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 481.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 481.
 [14]
 Underfull \hbox (badness 10000) detected at line 482
 [][][]
  []
 
 ) (./pilha_8c.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
 [15]
 Underfull \hbox (badness 10000) detected at line 41
 [][][]
@@ -1090,67 +1245,131 @@ Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 53.
 
 Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 102.
 [16]
 Underfull \hbox (badness 10000) detected at line 103
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
 
 Underfull \hbox (badness 10000) detected at line 136
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 167.
 [17]
 Underfull \hbox (badness 10000) detected at line 168
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 193.
 
 Underfull \hbox (badness 10000) detected at line 205
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 227.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 240.
 [18]
 Underfull \hbox (badness 10000) detected at line 241
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 268.
 
 Underfull \hbox (badness 10000) detected at line 280
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 293.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 293.
 [19]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 305.
+
 Underfull \hbox (badness 10000) detected at line 319
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 350.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
 [20]
 Underfull \hbox (badness 10000) detected at line 364
 [][][]
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 386.
 
 Underfull \hbox (badness 10000) detected at line 398
 [][][]
  []
 
-[21] [22]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 419.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 432.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 432.
+[21]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 432.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 432.
+ [22]
 Underfull \hbox (badness 10000) detected at line 433
 [][][]
  []
 
 ) (./teste__pilha_8c.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
 [23]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 55.
+
 Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
@@ -1160,32 +1379,45 @@ Underfull \hbox (badness 10000) detected at line 61
 [][][]
  []
 
-) [24] (./refman.ind [25
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 157.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 157.
+ [24]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 161.
+ (./refman.ind
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 84.
+ [25
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 1F075A14FAC81D4C79BBCF89CE665B1B;7280.
+(rerunfilecheck)             Checksum: 3DE5BB9283903CA055646FCDFACD1CFD;7431.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 14993 strings out of 492642
- 215142 string characters out of 6135566
- 318495 words of memory out of 5000000
- 18486 multiletter control sequences out of 15000+600000
+ 15512 strings out of 492642
+ 222092 string characters out of 6135566
+ 335153 words of memory out of 5000000
+ 18987 multiletter control sequences out of 15000+600000
  67655 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,15n,92p,643b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,15n,92p,643b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1195,7 +1427,7 @@ ts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (29 pages, 136829 bytes).
+Output written on refman.pdf (29 pages, 138760 bytes).
 PDF statistics:
  697 PDF objects out of 1000 (max. 8388607)
  649 compressed objects within 7 object streams
