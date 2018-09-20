@@ -1,4 +1,4 @@
-\hypertarget{pilha_8h}{}\section{include/pilha.h File Reference}
+\hypertarget{pilha_8h}{}\section{Referência do Arquivo include/pilha.h}
 \label{pilha_8h}\index{include/pilha.\+h@{include/pilha.\+h}}
 
 
@@ -7,7 +7,7 @@ Arquivo de definição de funções.
 
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
-\subsection*{Classes}
+\subsection*{Componentes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_item_type}{Item\+Type}}
@@ -16,7 +16,7 @@ struct \mbox{\hyperlink{struct_elemento_lista}{Elemento\+Lista}}
 \begin{DoxyCompactList}\small\item\em Estrutura de um elemento da pilha. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpilha}{pilha}}
 \begin{DoxyCompactList}\small\item\em Estrutura da cabeça de uma pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Typedefs}
+\subsection*{Definições de Tipos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}\label{pilha_8h_a5fc4fd986b888c946351fdd1c19309da}} 
@@ -28,7 +28,7 @@ typedef struct \mbox{\hyperlink{struct_elemento_lista}{Elemento\+Lista}} \mbox{\
 \mbox{\Hypertarget{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}\label{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}} 
 typedef struct \mbox{\hyperlink{structpilha}{pilha}} \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}}
 \begin{DoxyCompactList}\small\item\em Estrutura da cabeça de uma pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Functions}
+\subsection*{Funções}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$ \mbox{\hyperlink{pilha_8h_abeffc56f4d28e628d579d65851e641fc}{create\+\_\+stack}} (\mbox{\hyperlink{pilha_8h_a0f925ca10d0bb1be8e61de5e8213d6ea}{Pilha}} $\ast$, int max\+\_\+tam)
@@ -55,18 +55,18 @@ int \mbox{\hyperlink{pilha_8h_a68f1e489a31e1559e0bbec2be1a7a86c}{top}} (\mbox{\h
 \begin{DoxyCompactList}\small\item\em Redefine o tamanho da pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsection{Descrição detalhada}
 Arquivo de definição de funções. 
 
-\begin{DoxyAuthor}{Author}
+\begin{DoxyAuthor}{Autor}
 Luís Eduardo 
 \end{DoxyAuthor}
-\begin{DoxyDate}{Date}
+\begin{DoxyDate}{Data}
 2018-\/09-\/13 
 \end{DoxyDate}
 
 
-\subsection{Function Documentation}
+\subsection{Funções}
 \mbox{\Hypertarget{pilha_8h_abeffc56f4d28e628d579d65851e641fc}\label{pilha_8h_abeffc56f4d28e628d579d65851e641fc}} 
 \index{pilha.\+h@{pilha.\+h}!create\+\_\+stack@{create\+\_\+stack}}
 \index{create\+\_\+stack@{create\+\_\+stack}!pilha.\+h@{pilha.\+h}}
@@ -78,13 +78,13 @@ Luís Eduardo
 Aloca memória para a pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em max\+\_\+tam} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -115,11 +115,11 @@ Pilha$\ast$
 Verifica se a pilha está vazia. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -147,11 +147,11 @@ int
 Verifica se a pilha foi alocada Nesse caso se ela existe. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -179,11 +179,11 @@ int
 Apaga a pilha da memória. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -223,11 +223,11 @@ Pilha$\ast$
 Verifica se a pilha atingiu o tamanho máximo. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -256,11 +256,11 @@ int
 retira ultimo elemento da pilha 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -295,11 +295,11 @@ int
 Printa toda a pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -336,13 +336,13 @@ int
 Adiciona um dado para a pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em elem} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -384,13 +384,13 @@ int
 Redefine o tamanho da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em tam} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 Pilha$\ast$ 
 \end{DoxyReturn}
 
@@ -418,11 +418,11 @@ Pilha$\ast$
 Retorna o tamanho atual da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
@@ -450,13 +450,13 @@ int
 Retorna elemento do topo da pilha. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parâmetros}
 {\em p} & \\
 \hline
 {\em elem} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Retorna}
 int 
 \end{DoxyReturn}
 
