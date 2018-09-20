@@ -67,6 +67,23 @@ Aloca memória para a pilha.
 \begin{DoxyReturn}{Returns}
 Pilha$\ast$ 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+19 \{
+20     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+21     \{
+22         p = (\mbox{\hyperlink{structpilha}{Pilha}} *)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structpilha}{Pilha}}));
+23         p->inicio = NULL;
+24         p->max = max\_tam;
+25         p->size = 0;
+26         \textcolor{keywordflow}{return} p;
+27     \}
+28     \textcolor{keywordflow}{else}
+29     \{
+30         \textcolor{keywordflow}{return} p;
+31     \}
+32 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a23746fe785492386349448876e7a9ffb}\label{pilha_8c_a23746fe785492386349448876e7a9ffb}} 
 \index{pilha.\+c@{pilha.\+c}!empty@{empty}}
 \index{empty@{empty}!pilha.\+c@{pilha.\+c}}
@@ -85,6 +102,20 @@ Verifica se a pilha está vazia.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+120 \{
+121     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+122     \{
+123         \textcolor{keywordflow}{return} (p->inicio == NULL);
+124     \}
+125 
+126     \textcolor{keywordflow}{else}
+127     \{
+128         \textcolor{keywordflow}{return} -1;
+129     \}
+130 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_aada16411d3871d4012d53eda11445cfc}\label{pilha_8c_aada16411d3871d4012d53eda11445cfc}} 
 \index{pilha.\+c@{pilha.\+c}!exists@{exists}}
 \index{exists@{exists}!pilha.\+c@{pilha.\+c}}
@@ -103,6 +134,20 @@ Verifica se a pilha foi alocada Nesse caso se ela existe.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+232 \{
+233     \textcolor{keywordflow}{if} (p == NULL)
+234     \{
+235         \textcolor{keywordflow}{return} 0;
+236     \}
+237 
+238     \textcolor{keywordflow}{else}
+239     \{
+240         \textcolor{keywordflow}{return} 1;
+241     \}
+242 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a2bac69c86f29517385a9b476813525c7}\label{pilha_8c_a2bac69c86f29517385a9b476813525c7}} 
 \index{pilha.\+c@{pilha.\+c}!free\+\_\+stack@{free\+\_\+stack}}
 \index{free\+\_\+stack@{free\+\_\+stack}!pilha.\+c@{pilha.\+c}}
@@ -121,6 +166,32 @@ Apaga a pilha da memória.
 \begin{DoxyReturn}{Returns}
 Pilha$\ast$ 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+165 \{
+166     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+167     \{
+168         \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *temp = p->inicio;
+169         \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *temp2;
+170         \textcolor{keywordflow}{while} (temp != NULL)
+171         \{
+172 
+173             temp2 = temp->next;
+174             free(temp); \textcolor{comment}{/*desalocando os nos*/}
+175             temp = NULL;
+176             temp = temp2;
+177         \}
+178         free(p); \textcolor{comment}{/*desalocando a pilha*/}
+179         p = NULL;
+180         \textcolor{keywordflow}{return} p;
+181     \}
+182 
+183     \textcolor{keywordflow}{else}
+184     \{
+185         \textcolor{keywordflow}{return} p;
+186     \}
+187 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a9b7aa0def3486a6e9e9cff6e575f7e46}\label{pilha_8c_a9b7aa0def3486a6e9e9cff6e575f7e46}} 
 \index{pilha.\+c@{pilha.\+c}!is\+F\+U\+LL@{is\+F\+U\+LL}}
 \index{is\+F\+U\+LL@{is\+F\+U\+LL}!pilha.\+c@{pilha.\+c}}
@@ -139,6 +210,21 @@ Verifica se a pilha atingiu o tamanho máximo.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+213 \{
+214     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+215     \{
+216 
+217         \textcolor{keywordflow}{return} (p->size == p->max);
+218     \}
+219 
+220     \textcolor{keywordflow}{else}
+221     \{
+222         \textcolor{keywordflow}{return} -1;
+223     \}
+224 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a8bfaa5a3ab84afdfc73226ecf2921483}\label{pilha_8c_a8bfaa5a3ab84afdfc73226ecf2921483}} 
 \index{pilha.\+c@{pilha.\+c}!pop@{pop}}
 \index{pop@{pop}!pilha.\+c@{pilha.\+c}}
@@ -157,6 +243,27 @@ retira ultimo elemento da pilha
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+95 \{
+96     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+97     \{
+98         \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *remov\_elemento;
+99         \textcolor{keywordflow}{if} (p->size == 0)
+100             \textcolor{keywordflow}{return} -1;
+101         remov\_elemento = p->inicio;
+102         p->inicio = p->inicio->next;
+103         free(remov\_elemento);
+104         p->size--;
+105         \textcolor{keywordflow}{return} 0;
+106     \}
+107 
+108     \textcolor{keywordflow}{else}
+109     \{
+110         \textcolor{keywordflow}{return} -1;
+111     \}
+112 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a4cef2f02b7f0ed5cb999cfbf54ef6e84}\label{pilha_8c_a4cef2f02b7f0ed5cb999cfbf54ef6e84}} 
 \index{pilha.\+c@{pilha.\+c}!print\+\_\+pilha@{print\+\_\+pilha}}
 \index{print\+\_\+pilha@{print\+\_\+pilha}!pilha.\+c@{pilha.\+c}}
@@ -175,6 +282,29 @@ Printa toda a pilha.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+138 \{
+139     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+140     \{
+141 
+142         \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *corrente;
+143         \textcolor{keywordtype}{int} i;
+144         corrente = p->inicio;
+145         \textcolor{keywordflow}{for} (i = 0; i < p->size; ++i)
+146         \{
+147             printf(\textcolor{stringliteral}{"\(\backslash\)t\(\backslash\)t%i\(\backslash\)n"}, corrente->pedaco);
+148             corrente = corrente->next;
+149         \}
+150         \textcolor{keywordflow}{return} 0;
+151     \}
+152 
+153     \textcolor{keywordflow}{else}
+154     \{
+155         \textcolor{keywordflow}{return} -1;
+156     \}
+157 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a6313a9388e8d0dc6694511840b52d284}\label{pilha_8c_a6313a9388e8d0dc6694511840b52d284}} 
 \index{pilha.\+c@{pilha.\+c}!push@{push}}
 \index{push@{push}!pilha.\+c@{pilha.\+c}}
@@ -195,6 +325,34 @@ Adiciona um dado para a pilha.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+41 \{
+42     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+43     \{
+44         \textcolor{keywordflow}{if} (p->size < p->max)
+45         \{
+46             \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *novo\_elemento;
+47             \textcolor{keywordflow}{if} ((novo\_elemento = (\mbox{\hyperlink{struct_elemento_lista}{Elemento}} *)malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_elemento_lista}{Elemento}}))) == NULL)
+48                 \textcolor{keywordflow}{return} -1;
+49             novo\_elemento->pedaco = elem;
+50             novo\_elemento->next = p->inicio;
+51             p->inicio = novo\_elemento;
+52             p->size++;
+53             \textcolor{keywordflow}{return} 0;
+54         \}
+55         \textcolor{keywordflow}{else}
+56         \{
+57             \textcolor{keywordflow}{return} -1;
+58         \}
+59     \}
+60 
+61     \textcolor{keywordflow}{else}
+62     \{
+63         \textcolor{keywordflow}{return} -1;
+64     \}
+65 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_ad7b6e5c70cad0d14219f9e3b3f897cc0}\label{pilha_8c_ad7b6e5c70cad0d14219f9e3b3f897cc0}} 
 \index{pilha.\+c@{pilha.\+c}!set\+\_\+size@{set\+\_\+size}}
 \index{set\+\_\+size@{set\+\_\+size}!pilha.\+c@{pilha.\+c}}
@@ -215,6 +373,20 @@ Redefine o tamanho da pilha.
 \begin{DoxyReturn}{Returns}
 Pilha$\ast$ 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+251 \{
+252     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+253     \{
+254         p->max = tam;
+255         \textcolor{keywordflow}{return} p;
+256     \}
+257     \textcolor{keywordflow}{else}
+258     \{
+259         \textcolor{keywordflow}{return} p;
+260     \}
+261 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_af35001ddc7fe83a0070d2b002b891d5f}\label{pilha_8c_af35001ddc7fe83a0070d2b002b891d5f}} 
 \index{pilha.\+c@{pilha.\+c}!tamanho@{tamanho}}
 \index{tamanho@{tamanho}!pilha.\+c@{pilha.\+c}}
@@ -233,6 +405,20 @@ Retorna o tamanho atual da pilha.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+195 \{
+196     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+197     \{
+198         \textcolor{keywordflow}{return} p->size;
+199     \}
+200 
+201     \textcolor{keywordflow}{else}
+202     \{
+203         \textcolor{keywordflow}{return} -1;
+204     \}
+205 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_a68f1e489a31e1559e0bbec2be1a7a86c}\label{pilha_8c_a68f1e489a31e1559e0bbec2be1a7a86c}} 
 \index{pilha.\+c@{pilha.\+c}!top@{top}}
 \index{top@{top}!pilha.\+c@{pilha.\+c}}
@@ -253,3 +439,20 @@ Retorna elemento do topo da pilha.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
+
+\begin{DoxyCode}
+74 \{
+75     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+76     \{
+77         \mbox{\hyperlink{struct_elemento_lista}{Elemento}} *a;
+78         a = p->inicio;
+79         *elem = a->pedaco;
+80         \textcolor{keywordflow}{return} 0;
+81     \}
+82 
+83     \textcolor{keywordflow}{else}
+84     \{
+85         \textcolor{keywordflow}{return} -1;
+86     \}
+87 \}
+\end{DoxyCode}

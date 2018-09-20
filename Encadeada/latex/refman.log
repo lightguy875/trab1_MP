@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  14 SEP 2018 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  19 SEP 2018 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,61 +990,61 @@ Underfull \hbox (badness 10000) detected at line 87
  []
 
 
-Underfull \hbox (badness 10000) detected at line 105
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 123
+Underfull \hbox (badness 10000) detected at line 122
 [][][]
  []
 
 [9]
-Underfull \hbox (badness 10000) detected at line 141
+Underfull \hbox (badness 10000) detected at line 154
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 159
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 177
+Underfull \hbox (badness 10000) detected at line 186
 [][][]
  []
 
 [10]
-Underfull \hbox (badness 10000) detected at line 195
+Underfull \hbox (badness 10000) detected at line 230
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 215
+Underfull \hbox (badness 10000) detected at line 263
 [][][]
  []
 
 [11]
-Underfull \hbox (badness 10000) detected at line 235
+Underfull \hbox (badness 10000) detected at line 302
+[][][]
+ []
+
+[12]
+Underfull \hbox (badness 10000) detected at line 345
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 253
+Underfull \hbox (badness 10000) detected at line 393
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 425
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 273
+Underfull \hbox (badness 10000) detected at line 459
 [][][]
  []
 
-) (./pilha_8c.tex
+) (./pilha_8c.tex [14]
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) detected at line 41
 [][][]
  []
@@ -1054,67 +1054,67 @@ Underfull \hbox (badness 10000) detected at line 44
 [][][]
  []
 
-[13]
+[15] [16]
 Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 85
+Underfull \hbox (badness 10000) detected at line 102
+[][][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 103
+Underfull \hbox (badness 10000) detected at line 166
 [][][]
  []
 
-[14]
-Underfull \hbox (badness 10000) detected at line 121
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 139
+[18]
+Underfull \hbox (badness 10000) detected at line 210
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 157
+Underfull \hbox (badness 10000) detected at line 243
 [][][]
  []
 
-[15]
-Underfull \hbox (badness 10000) detected at line 175
+[19]
+Underfull \hbox (badness 10000) detected at line 282
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 195
-[][][]
- []
-
-[16]
-Underfull \hbox (badness 10000) detected at line 215
+[20]
+Underfull \hbox (badness 10000) detected at line 325
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 233
+Underfull \hbox (badness 10000) detected at line 373
+[][][]
+ []
+
+[21]
+Underfull \hbox (badness 10000) detected at line 405
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 253
+Underfull \hbox (badness 10000) detected at line 439
 [][][]
  []
 
-) (./teste__pilha_8c.tex
+) (./teste__pilha_8c.tex [22]
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[17]
+
 Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
@@ -1124,8 +1124,9 @@ Underfull \hbox (badness 10000) detected at line 61
 [][][]
  []
 
-) [18] (./refman.ind [19
+) [23] [24
 
+] (./refman.ind [25
 
 
 ])
@@ -1139,25 +1140,26 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 14990 strings out of 492642
- 215366 string characters out of 6135566
- 314561 words of memory out of 5000000
+ 14997 strings out of 492642
+ 215414 string characters out of 6135566
+ 315562 words of memory out of 5000000
  18485 multiletter control sequences out of 15000+600000
- 65722 words of font info for 84 fonts, out of 8000000 for 9000
+ 66021 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,15n,92p,588b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (23 pages, 118339 bytes).
+cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
+share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (29 pages, 138370 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 608 compressed objects within 7 object streams
- 144 named destinations out of 1000 (max. 500000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 672 compressed objects within 7 object streams
+ 150 named destinations out of 1000 (max. 500000)
  345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
