@@ -1,8 +1,8 @@
         -:    0:Source:pilha.c
         -:    0:Graph:obj/pilha.gcno
         -:    0:Data:obj/pilha.gcda
-        -:    0:Runs:1
-        -:    0:Programs:1
+        -:    0:Runs:2
+        -:    0:Programs:2
         -:    1:/**
         -:    2: * @brief Arquivo de implementação das funções
         -:    3: * 
@@ -20,15 +20,15 @@
         -:   15: * @param max_tam 
         -:   16: * @return Pilha* 
         -:   17: */
-       11:   18:Pilha *create_stack(Pilha *p, int max_tam)
+       24:   18:Pilha *create_stack(Pilha *p, int max_tam)
         -:   19:{
-       11:   20:	if (!exists(p))
+       24:   20:	if (!exists(p))
         -:   21:	{
-       11:   22:		p = (Pilha *)malloc(sizeof(Pilha));
-       11:   23:		p->inicio = NULL;
-       11:   24:		p->max = max_tam;
-       11:   25:		p->size = 0;
-       11:   26:		return p;
+       24:   22:		p = (Pilha *)malloc(sizeof(Pilha));
+       24:   23:		p->inicio = NULL;
+       24:   24:		p->max = max_tam;
+       24:   25:		p->size = 0;
+       24:   26:		return p;
         -:   27:	}
         -:   28:	else
         -:   29:	{
@@ -42,30 +42,30 @@
         -:   37: * @param elem 
         -:   38: * @return int 
         -:   39: */
-       10:   40:int push(Pilha *p, Dado elem)
+       26:   40:int push(Pilha *p, Dado elem)
         -:   41:{
-       10:   42:	if (exists(p))
+       26:   42:	if (exists(p))
         -:   43:	{
-        8:   44:		if (p->size < p->max)
+       22:   44:		if (p->size < p->max)
         -:   45:		{
         -:   46:			Elemento *novo_elemento;
-        7:   47:			if ((novo_elemento = (Elemento *)malloc(sizeof(Elemento))) == NULL)
+       20:   47:			if ((novo_elemento = (Elemento *)malloc(sizeof(Elemento))) == NULL)
     #####:   48:				return -1;
-        7:   49:			novo_elemento->pedaco = elem;
-        7:   50:			novo_elemento->next = p->inicio;
-        7:   51:			p->inicio = novo_elemento;
-        7:   52:			p->size++;
-        7:   53:			return 0;
+       20:   49:			novo_elemento->pedaco = elem;
+       20:   50:			novo_elemento->next = p->inicio;
+       20:   51:			p->inicio = novo_elemento;
+       20:   52:			p->size++;
+       20:   53:			return 0;
         -:   54:		}
         -:   55:		else
         -:   56:		{
-        1:   57:			return -1;
+        2:   57:			return -1;
         -:   58:		}
         -:   59:	}
         -:   60:
         -:   61:	else
         -:   62:	{
-        2:   63:		return -1;
+        4:   63:		return -1;
         -:   64:	}
         -:   65:}
         -:   66:/**
@@ -75,19 +75,19 @@
         -:   70: * @param elem 
         -:   71: * @return int 
         -:   72: */
-        4:   73:int top(Pilha *p, Dado *elem)
+       10:   73:int top(Pilha *p, Dado *elem)
         -:   74:{
-        4:   75:	if (exists(p))
+       10:   75:	if (exists(p))
         -:   76:	{
         -:   77:		Elemento *a;
-        1:   78:		a = p->inicio;
-        1:   79:		*elem = a->pedaco;
-        1:   80:		return 0;
+        4:   78:		a = p->inicio;
+        4:   79:		*elem = a->pedaco;
+        4:   80:		return 0;
         -:   81:	}
         -:   82:
         -:   83:	else
         -:   84:	{
-        3:   85:		return -1;
+        6:   85:		return -1;
         -:   86:	}
         -:   87:}
         -:   88:/**
@@ -96,23 +96,23 @@
         -:   91: * @param p 
         -:   92: * @return int 
         -:   93: */
-        3:   94:int pop(Pilha *p)
+        6:   94:int pop(Pilha *p)
         -:   95:{
-        3:   96:	if (exists(p))
+        6:   96:	if (exists(p))
         -:   97:	{
         -:   98:		Elemento *remov_elemento;
-        2:   99:		if (p->size == 0)
-        1:  100:			return -1;
-        1:  101:		remov_elemento = p->inicio;
-        1:  102:		p->inicio = p->inicio->next;
-        1:  103:		free(remov_elemento);
-        1:  104:		p->size--;
-        1:  105:		return 0;
+        4:   99:		if (p->size == 0)
+        2:  100:			return -1;
+        2:  101:		remov_elemento = p->inicio;
+        2:  102:		p->inicio = p->inicio->next;
+        2:  103:		free(remov_elemento);
+        2:  104:		p->size--;
+        2:  105:		return 0;
         -:  106:	}
         -:  107:
         -:  108:	else
         -:  109:	{
-        1:  110:		return -1;
+        2:  110:		return -1;
         -:  111:	}
         -:  112:}
         -:  113:/**
@@ -121,16 +121,16 @@
         -:  116: * @param p 
         -:  117: * @return int 
         -:  118: */
-        3:  119:int empty(Pilha *p)
+        6:  119:int empty(Pilha *p)
         -:  120:{
-        3:  121:	if (exists(p))
+        6:  121:	if (exists(p))
         -:  122:	{
-        2:  123:		return (p->inicio == NULL);
+        4:  123:		return (p->inicio == NULL);
         -:  124:	}
         -:  125:
         -:  126:	else
         -:  127:	{
-        1:  128:		return -1;
+        2:  128:		return -1;
         -:  129:	}
         -:  130:}
         -:  131:/**
@@ -139,25 +139,25 @@
         -:  134: * @param p 
         -:  135: * @return int 
         -:  136: */
-        2:  137:int print_pilha(Pilha *p)
+        4:  137:int print_pilha(Pilha *p)
         -:  138:{
-        2:  139:	if (exists(p))
+        4:  139:	if (exists(p))
         -:  140:	{
         -:  141:
         -:  142:		Elemento *corrente;
         -:  143:		int i;
-        1:  144:		corrente = p->inicio;
-        2:  145:		for (i = 0; i < p->size; ++i)
+        2:  144:		corrente = p->inicio;
+        4:  145:		for (i = 0; i < p->size; ++i)
         -:  146:		{
-        1:  147:			printf("\t\t%i\n", corrente->pedaco);
-        1:  148:			corrente = corrente->next;
+        2:  147:			printf("\t\t%i\n", corrente->pedaco);
+        2:  148:			corrente = corrente->next;
         -:  149:		}
-        1:  150:		return 0;
+        2:  150:		return 0;
         -:  151:	}
         -:  152:
         -:  153:	else
         -:  154:	{
-        1:  155:		return -1;
+        2:  155:		return -1;
         -:  156:	}
         -:  157:}
         -:  158:/**
@@ -166,13 +166,13 @@
         -:  161: * @param p 
         -:  162: * @return Pilha* 
         -:  163: */
-        4:  164:Pilha *free_stack(Pilha *p)
+        8:  164:Pilha *free_stack(Pilha *p)
         -:  165:{
-        4:  166:	if (exists(p))
+        8:  166:	if (exists(p))
         -:  167:	{
-        2:  168:		Elemento *temp = p->inicio;
+        4:  168:		Elemento *temp = p->inicio;
         -:  169:		Elemento *temp2;
-       2*:  170:		while (temp != NULL)
+       4*:  170:		while (temp != NULL)
         -:  171:		{
         -:  172:
     #####:  173:			temp2 = temp->next;
@@ -180,14 +180,14 @@
     #####:  175:			temp = NULL;
     #####:  176:			temp = temp2;
         -:  177:		}
-        2:  178:		free(p); /*desalocando a pilha*/
-        2:  179:		p = NULL;
-        2:  180:		return p;
+        4:  178:		free(p); /*desalocando a pilha*/
+        4:  179:		p = NULL;
+        4:  180:		return p;
         -:  181:	}
         -:  182:
         -:  183:	else
         -:  184:	{
-        2:  185:		return p;
+        4:  185:		return p;
         -:  186:	}
         -:  187:}
         -:  188:/**
@@ -196,16 +196,16 @@
         -:  191: * @param p 
         -:  192: * @return int 
         -:  193: */
-        2:  194:int tamanho(Pilha *p)
+        4:  194:int tamanho(Pilha *p)
         -:  195:{
-        2:  196:	if (exists(p))
+        4:  196:	if (exists(p))
         -:  197:	{
-        1:  198:		return p->size;
+        2:  198:		return p->size;
         -:  199:	}
         -:  200:
         -:  201:	else
         -:  202:	{
-        1:  203:		return -1;
+        2:  203:		return -1;
         -:  204:	}
         -:  205:}
         -:  206:/**
@@ -214,17 +214,17 @@
         -:  209: * @param p 
         -:  210: * @return int 
         -:  211: */
-        3:  212:int isFULL(Pilha *p)
+        6:  212:int isFULL(Pilha *p)
         -:  213:{
-        3:  214:	if (exists(p))
+        6:  214:	if (exists(p))
         -:  215:	{
         -:  216:
-        1:  217:		return (p->size == p->max);
+        2:  217:		return (p->size == p->max);
         -:  218:	}
         -:  219:
         -:  220:	else
         -:  221:	{
-        2:  222:		return -1;
+        4:  222:		return -1;
         -:  223:	}
         -:  224:}
         -:  225:/**
@@ -233,16 +233,16 @@
         -:  228: * @param p 
         -:  229: * @return int 
         -:  230: */
-       48:  231:int exists(Pilha *p)
+      108:  231:int exists(Pilha *p)
         -:  232:{
-       48:  233:	if (p == NULL)
+      108:  233:	if (p == NULL)
         -:  234:	{
-       28:  235:		return 0;
+       58:  235:		return 0;
         -:  236:	}
         -:  237:
         -:  238:	else
         -:  239:	{
-       20:  240:		return 1;
+       50:  240:		return 1;
         -:  241:	}
         -:  242:}
         -:  243:/**
@@ -252,15 +252,15 @@
         -:  247: * @param tam 
         -:  248: * @return Pilha* 
         -:  249: */
-        2:  250:Pilha *set_size(Pilha *p, int tam)
+        6:  250:Pilha *set_size(Pilha *p, int tam)
         -:  251:{
-        2:  252:	if (exists(p))
+        6:  252:	if (exists(p))
         -:  253:	{
-        1:  254:		p->max = tam;
-        1:  255:		return p;
+        4:  254:		p->max = tam;
+        4:  255:		return p;
         -:  256:	}
         -:  257:	else
         -:  258:	{
-        1:  259:		return p;
+        2:  259:		return p;
         -:  260:	}
         -:  261:}
