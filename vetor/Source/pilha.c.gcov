@@ -251,7 +251,7 @@
         -:  246:{
         2:  247:	if (exists(p) && tam > p->size)
         -:  248:	{
-        -:  249:
+        1:  249:		p->valor = (Dado *) realloc(p->valor,tam);
         1:  250:		p->max_tam = tam;
         1:  251:		return p;
         -:  252:	}

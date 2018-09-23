@@ -246,7 +246,7 @@ Pilha *set_size(Pilha *p, int tam)
 {
 	if (exists(p) && tam > p->size)
 	{
-
+		p->valor = (Dado *) realloc(p->valor,tam);
 		p->max_tam = tam;
 		return p;
 	}
