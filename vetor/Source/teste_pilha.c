@@ -176,6 +176,10 @@ TEST(tamanho_test, testar_tamanho_da_pilha)
         push(p, k);
         EXPECT_EQ(1, tamanho(p));
 }
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste de mudança de tamanho da pilha
+ */
 
 TEST(MAX_PILHA_SIZE_TEST, testar_tamanho_maximo_da_pilha)
 {

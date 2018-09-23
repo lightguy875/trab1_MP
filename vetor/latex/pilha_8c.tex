@@ -369,7 +369,7 @@ Pilha$\ast$
 246 \{
 247     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p) && tam > p->size)
 248     \{
-249 
+249         p->valor = (\mbox{\hyperlink{struct_item_type}{Dado}} *) realloc(p->valor,tam);
 250         p->max\_tam = tam;
 251         \textcolor{keywordflow}{return} p;
 252     \}
