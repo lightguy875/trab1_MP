@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  23 SEP 2018 19:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.9.13)  25 SEP 2018 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,14 +1368,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 52.
 [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 61.
 
-Underfull \hbox (badness 10000) detected at line 61
+Underfull \hbox (badness 10000) detected at line 64
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 64
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
@@ -1411,10 +1411,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 15514 strings out of 492642
- 222192 string characters out of 6135566
- 336189 words of memory out of 5000000
- 18988 multiletter control sequences out of 15000+600000
+ 15516 strings out of 492642
+ 222292 string characters out of 6135566
+ 336225 words of memory out of 5000000
+ 18989 multiletter control sequences out of 15000+600000
  67655 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,15n,92p,643b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1427,10 +1427,10 @@ ts/type1/urw/courier/ucrro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/
 share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (29 pages, 139454 bytes).
+Output written on refman.pdf (29 pages, 139754 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
- 653 compressed objects within 7 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 655 compressed objects within 7 object streams
+ 149 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

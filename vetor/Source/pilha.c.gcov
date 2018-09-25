@@ -21,15 +21,15 @@
         -:   16: * @param max_tam 
         -:   17: * @return Pilha* 
         -:   18: */
-       14:   19:Pilha *create_stack(Pilha *p, int max_tam)
+       16:   19:Pilha *create_stack(Pilha *p, int max_tam)
         -:   20:{
-       14:   21:	if (!exists(p))
+       16:   21:	if (!exists(p))
         -:   22:	{
-       13:   23:		p = (Pilha *)malloc(sizeof(Pilha));
-       13:   24:		p->valor = (Dado *)malloc(max_tam * sizeof(Dado));
-       13:   25:		p->max_tam = max_tam;
-       13:   26:		p->size = 0;
-       13:   27:		return p;
+       15:   23:		p = (Pilha *)malloc(sizeof(Pilha));
+       15:   24:		p->valor = (Dado *)malloc(max_tam * sizeof(Dado));
+       15:   25:		p->max_tam = max_tam;
+       15:   26:		p->size = 0;
+       15:   27:		return p;
         -:   28:	}
         -:   29:
         -:   30:	else
@@ -45,15 +45,15 @@
         -:   40: * @return int 
         -:   41: */
         -:   42:
-        8:   43:int push(Pilha *p, Dado elem)
+       13:   43:int push(Pilha *p, Dado elem)
         -:   44:{
-        8:   45:	if (exists(p))
+       13:   45:	if (exists(p))
         -:   46:	{
-        7:   47:		if (p->size < p->max_tam)
+       12:   47:		if (p->size < p->max_tam)
         -:   48:		{
-        6:   49:			p->valor[p->size] = elem;
-        6:   50:			p->size++;
-        6:   51:			return 0;
+       11:   49:			p->valor[p->size] = elem;
+       11:   50:			p->size++;
+       11:   51:			return 0;
         -:   52:		}
         -:   53:		else
         -:   54:		{
@@ -165,11 +165,11 @@
         -:  160: * @param p 
         -:  161: * @return int 
         -:  162: */
-        3:  163:int tamanho(Pilha *p)
+        4:  163:int tamanho(Pilha *p)
         -:  164:{
-        3:  165:	if (exists(p))
+        4:  165:	if (exists(p))
         -:  166:	{
-        2:  167:		return p->size;
+        3:  167:		return p->size;
         -:  168:	}
         -:  169:
         -:  170:	else
@@ -204,16 +204,16 @@
         -:  199: * @param p 
         -:  200: * @return int 
         -:  201: */
-       51:  202:int exists(Pilha *p)
+       62:  202:int exists(Pilha *p)
         -:  203:{
-       51:  204:	if (p == NULL)
+       62:  204:	if (p == NULL)
         -:  205:	{
-       24:  206:		return 0;
+       26:  206:		return 0;
         -:  207:	}
         -:  208:
         -:  209:	else
         -:  210:	{
-       27:  211:		return 1;
+       36:  211:		return 1;
         -:  212:	}
         -:  213:}
         -:  214:/**
@@ -223,15 +223,15 @@
         -:  218: * @param elemento 
         -:  219: * @return int 
         -:  220: */
-        2:  221:int top(Pilha *p, Dado *elemento)
+        3:  221:int top(Pilha *p, Dado *elemento)
         -:  222:{
-        2:  223:	if (exists(p))
+        3:  223:	if (exists(p))
         -:  224:	{
         -:  225:
-        1:  226:		if (p->size == 0)
+        2:  226:		if (p->size == 0)
     #####:  227:			return -1;
-        1:  228:		*elemento = p->valor[p->size - 1];
-        1:  229:		return 0;
+        2:  228:		*elemento = p->valor[p->size - 1];
+        2:  229:		return 0;
         -:  230:	}
         -:  231:
         -:  232:	else
@@ -247,17 +247,17 @@
         -:  242: * @param tam 
         -:  243: * @return Pilha* 
         -:  244: */
-        2:  245:Pilha *set_size(Pilha *p, int tam)
+        4:  245:Pilha *set_size(Pilha *p, int tam)
         -:  246:{
-        2:  247:	if (exists(p) && tam > p->size)
+        4:  247:	if (exists(p) && tam > p->size)
         -:  248:	{
-        1:  249:		p->valor = (Dado *) realloc(p->valor,tam);
-        1:  250:		p->max_tam = tam;
-        1:  251:		return p;
+        2:  249:		p->valor = (Dado *) realloc(p->valor,tam);
+        2:  250:		p->max_tam = tam;
+        2:  251:		return p;
         -:  252:	}
         -:  253:
         -:  254:	else
         -:  255:	{
-        1:  256:		return p;
+        2:  256:		return p;
         -:  257:	}
         -:  258:}
