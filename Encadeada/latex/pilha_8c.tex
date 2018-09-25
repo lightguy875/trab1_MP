@@ -376,16 +376,18 @@ Pilha$\ast$
 
 \begin{DoxyCode}
 251 \{
-252     \textcolor{keywordflow}{if} (\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p))
+252     \textcolor{keywordflow}{if} ((\mbox{\hyperlink{pilha_8c_aada16411d3871d4012d53eda11445cfc}{exists}}(p)) && (p->max < tam))
 253     \{
-254         p->max = tam;
-255         \textcolor{keywordflow}{return} p;
-256     \}
-257     \textcolor{keywordflow}{else}
-258     \{
-259         \textcolor{keywordflow}{return} p;
-260     \}
-261 \}
+254     
+255         p->max = tam;
+256         \textcolor{keywordflow}{return} p;
+257         
+258     \}
+259     \textcolor{keywordflow}{else}
+260     \{
+261         \textcolor{keywordflow}{return} p;
+262     \}
+263 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{pilha_8c_af35001ddc7fe83a0070d2b002b891d5f}\label{pilha_8c_af35001ddc7fe83a0070d2b002b891d5f}} 
 \index{pilha.\+c@{pilha.\+c}!tamanho@{tamanho}}

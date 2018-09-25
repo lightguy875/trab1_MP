@@ -249,10 +249,12 @@ int exists(Pilha *p)
  */
 Pilha *set_size(Pilha *p, int tam)
 {
-	if (exists(p))
+	if ((exists(p)) && (p->max < tam))
 	{
+	
 		p->max = tam;
 		return p;
+		
 	}
 	else
 	{

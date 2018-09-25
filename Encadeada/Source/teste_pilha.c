@@ -181,20 +181,37 @@ TEST(print_function_test, testar_print)
  * Teste de mudança de tamanho da pilha
  */
 
-TEST(MAX_PILHA_SIZE_TEST , testar_tamanho_maximo_da_pilha)
+TEST(MAX_PILHA_SIZE_TEST, testar_tamanho_maximo_da_pilha)
 {
-	Dado l,m;
+	Dado l, m;
 	l.x = 30;
 	m.x = 20;
 	Pilha *p = NULL;
-	p = create_stack(p,2);
+	p = create_stack(p, 2);
+	push(p, l);
+	push(p, l);
+	p = set_size(p, 3);
+	EXPECT_EQ(3, p->max);
+	push(p, m);
+	top(p, &l);
+	EXPECT_EQ(20, l.x);
+}
+/**
+ * @brief Constroi um  novo objeto de Teste
+ * Teste de mudança de tamanho de pilha para menor
+ */
+
+TEST(MAX_PILHA_SIZE_TEST_SECOND, testar_tamanho_minimo_da_pilha)
+{
+	Dado l, m;
+	l.x = 30;
+	m.x = 20;
+	Pilha *p = NULL;
+	p = create_stack(p, 2);
 	push(p,l);
 	push(p,l);
-	p = set_size(p,3);
-	EXPECT_EQ(3,p->max);
-	push(p,m);
-	top(p,&l);
-	EXPECT_EQ(20,l.x);
+	p = set_size(p,1);
+	EXPECT_EQ(2,tamanho(p));
 }
 
 int main(int argc, char **argv)
